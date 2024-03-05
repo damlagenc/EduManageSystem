@@ -62,32 +62,40 @@ const postRegister = async (req, res, next) =>
 {
     try
     {
-        const { username, password } = req.body;
+        const { username, password, role } = req.body;
         console.log(req.body);
 
-        if (!username || !password)
+        if (!username || !password || !role)
         {
             return res
-                .status(401)
-                .json({ error: "Please do not leave any field blank" });
+                .status(400) // 401 Unauthorized değil, 400 Bad Request daha uygun olur.
+                .json({ error: "Please do not leave any field blank." });
+        }
+
+        // Role değerinin geçerli olup olmadığını kontrol et
+        if (!['teacher', 'student'].includes(role))
+        {
+            return res.status(400).json({ error: "Invalid role. Must be 'teacher' or 'student'." });
+        }
+
+        const findUser = await User.findOne({ username: username });
+        console.log(findUser);
+        if (!findUser)
+        {
+            const user = new User({
+                username: username,
+                password: md5(password),
+                role: role // Kullanıcı oluştururken role değerini de kaydet
+            });
+            await user.save();
+            res.status(200).json({
+                status: "success",
+                message: "You have successfully registered.",
+            });
         } else
         {
-            const findUser = await User.find({ username: username });
-            console.log(findUser);
-            if (!findUser[0])
-            {
-                const user = new User();
-                user.username = username;
-                user.password = md5(password);
-                await user.save();
-                res.status(200).json({
-                    status: "success",
-                    message: "You have successfully register.",
-                });
-            } else
-            {
-                return res.status(401).json({ error: "This user already exist" });
-            }
+            return res.status(409) // 409 Conflict, kayıt olan kullanıcı zaten varsa daha uygun bir durum kodu.
+                .json({ error: "This user already exists." });
         }
     } catch (error)
     {

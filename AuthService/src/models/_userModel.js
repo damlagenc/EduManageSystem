@@ -19,7 +19,7 @@ const userSchema = new Schema(
         role: {
             type: String,
             required: true,
-            enum: ['öğretmen', 'öğrenci'], // Rolün sadece 'öğretmen' veya 'öğrenci' olabileceğini belirtir
+            enum: ['teacher', 'student'], // Rolün sadece 'öğretmen' veya 'öğrenci' olabileceğini belirtir
         },
 
     },

@@ -1,5 +1,4 @@
 using MongoDB.Driver;
-using CourseService.CourseService.Repositories;
 using CourseService.CourseService.Repositories.VideoRepository;
 using CourseService.CourseService.Repositories.CourseRepository;
 var builder = WebApplication.CreateBuilder(args);

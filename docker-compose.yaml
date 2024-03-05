@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build:
+      context: ./AuthService
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3001"
+    environment:
+      MONGODB_CONNECTION_STRING: mongodb://mongo-1-auth-service-1:27017/auth-service
+    depends_on:
+      - mongo
+
+  course-service:
+    build:
+      context: ./CourseService/CourseService
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    depends_on:
+      - mongo
+    environment:
+      MongoDbSettings:ConnectionString: "mongodb://mongo:27017"
+
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"

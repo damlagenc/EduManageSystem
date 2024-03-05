@@ -54,7 +54,6 @@ namespace CourseService.CourseService.CourseController
                 Description = createCourseDto.Description,
                 Price = createCourseDto.Price,
                 Teacher = "New Teacher", // Bu kısmı dinamik olarak ayarlamayı düşünebilirsiniz
-                VideoIds = createCourseDto.VideoIds
             };
 
             await _courseRepository.CreateAsync(newCourse);
@@ -96,6 +95,12 @@ namespace CourseService.CourseService.CourseController
             return NoContent();
         }
 
+        /*
+        UploadVideoAsync metodu videoyu GridFS'ye kaydeder ve kaydedilen video için bir ObjectId döndürür. 
+        Bu ObjectId, ToString metodu kullanılarak string bir değere dönüştürülür 
+        ve kursun VideoIds listesine eklenir.
+         Son olarak, kurs nesnesi güncellenir ve değişiklikler veritabanına kaydedilir.
+         */
 
         [HttpPost("{courseId}/upload-video")]
         public async Task<IActionResult> UploadVideo(Guid courseId, IFormFile videoFile)

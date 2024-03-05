@@ -1,0 +1,166 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Sample API",
+        "description": "API description in Markdown.",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3001"
+        }
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "summary": "Logs user into the system",
+                "tags": [
+                    "Authentication"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "username",
+                                    "password"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "string"
+                                        },
+                                        "token": {
+                                            "type": "string"
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Username and password are required"
+                    },
+                    "401": {
+                        "description": "Wrong username and password combination"
+                    }
+                }
+            }
+        },
+        "/register": {
+            "post": {
+                "summary": "Registers a new user",
+                "tags": [
+                    "Authentication"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "username",
+                                    "password"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User successfully registered"
+                    },
+                    "401": {
+                        "description": "This user already exists"
+                    }
+                }
+            }
+        },
+        "/logout": {
+            "get": {
+                "summary": "Logs out the current user",
+                "tags": [
+                    "Authentication"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "You are logged out"
+                    },
+                    "204": {
+                        "description": "No content, perhaps already logged out or token not provided"
+                    }
+                }
+            }
+        },
+        "/change-password": {
+            "post": {
+                "summary": "Changes the password for the current user",
+                "tags": [
+                    "Authentication"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "oldPass": {
+                                        "type": "string"
+                                    },
+                                    "newPass": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "oldPass",
+                                    "newPass"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Password changed successfully"
+                    },
+                    "401": {
+                        "description": "Invalid old password or fields missing"
+                    }
+                }
+            }
+        }
+    }
+}

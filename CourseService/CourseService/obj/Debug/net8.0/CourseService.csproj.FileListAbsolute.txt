@@ -45,3 +45,4 @@
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/CourseService.pdb
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/CourseService.genruntimeconfig.cache
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/ref/CourseService.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/CourseService.sourcelink.json
