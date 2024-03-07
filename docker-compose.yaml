@@ -2,28 +2,38 @@ version: '3.8'
 
 services:
   auth-service:
+    container_name: Auth-Service
+    image: edumanagesystem-auth-service
     build:
       context: ./AuthService
       dockerfile: Dockerfile
     ports:
       - "3002:3001"
-    environment:
-      MONGODB_CONNECTION_STRING: mongodb://mongo-1-auth-service-1:27017/auth-service
     depends_on:
       - mongo
+    environment:
+      - MONGODB_CONNECTION_STRING=mongodb://mongo:27017/auth-service
+      - SESSION_SECRET = G/+98Uzxc68^%it9o0-4@F7h*&U9i_o+
+      - JWT_SECRET_KEY = nWGCbKgcbEgZHkbj9atm
 
   course-service:
+    container_name: Course-Service
+    image: edumanagesystem-course-service
     build:
       context: ./CourseService/CourseService
       dockerfile: Dockerfile
     ports:
-      - "5001:80"
+      - "5008:80"
     depends_on:
       - mongo
     environment:
-      MongoDbSettings:ConnectionString: "mongodb://mongo:27017"
+      MongoDbSettings__ConnectionString: "mongodb://mongo:27017/course-service" #  "__" kullanarak iç içe yapıyı belirt
 
-  mongo:
-    image: "mongo"
-    ports:
-      - "27017:27017"
+mongo:
+  image: mongo
+  restart: always
+  ports:
+    - "27017:27017"
+  environment:
+    MONGO_INITDB_ROOT_USERNAME: damlagnc14
+    MONGO_INITDB_ROOT_PASSWORD: exLfo0xt5nyio5GIAoample

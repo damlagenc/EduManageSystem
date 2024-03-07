@@ -32,7 +32,7 @@ namespace CourseService.CourseService.CourseController
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<CourseDto>> GetByIdAsync(Guid id)
+        public async Task<ActionResult<CourseDto>> GetById(Guid id)
         {
             var course = await _courseRepository.GetAsync(id);
             if (course == null)
@@ -57,10 +57,9 @@ namespace CourseService.CourseService.CourseController
             };
 
             await _courseRepository.CreateAsync(newCourse);
+            var courseDto = newCourse.AsDto();
+            return CreatedAtAction(nameof(GetById), new { id = newCourse.Id }, courseDto);
 
-            // DTO dönüş tipi oluşturulurken, video ID'leri de dahil edilmelidir.
-            var courseDto = new CourseDto(newCourse.Id, newCourse.Name, newCourse.Description, newCourse.Price, newCourse.Teacher, newCourse.VideoIds);
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = newCourse.Id }, courseDto);
         }
 
         [HttpPut("{id}")]
@@ -129,12 +128,19 @@ namespace CourseService.CourseService.CourseController
                 return NotFound("Course or video not found");
             }
 
-            await _videoRepository.DeleteVideoAsync(new ObjectId(videoId));
+            // ObjectId'ye dönüştürme
+            if (!ObjectId.TryParse(videoId, out var objectId))
+            {
+                return BadRequest("Invalid video ID");
+            }
+
+            await _videoRepository.DeleteVideoAsync(objectId);
             course.VideoIds.Remove(videoId);
             await _courseRepository.UpdateAsync(course);
 
             return NoContent();
         }
+
 
     }
 

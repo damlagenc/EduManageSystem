@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Sample API",
-        "description": "API description in Markdown.",
+        "title": "AuthService API",
+        "description": "",
         "version": "1.0.0"
     },
     "servers": [
@@ -33,7 +33,8 @@
                                 },
                                 "required": [
                                     "username",
-                                    "password"
+                                    "password",
+                                    "role"
                                 ]
                             }
                         }
@@ -88,11 +89,15 @@
                                     },
                                     "password": {
                                         "type": "string"
+                                    },
+                                    "role": {
+                                        "type": "string"
                                     }
                                 },
                                 "required": [
                                     "username",
-                                    "password"
+                                    "password",
+                                    "role"
                                 ]
                             }
                         }

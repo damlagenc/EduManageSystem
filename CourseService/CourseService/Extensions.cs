@@ -9,7 +9,7 @@ namespace CourseService.CourseService.Extensions
         //Ancak, her metod için bu dönüşümün gerekliliği, metodun işlevine ve geri dönüş değerlerine bağlıdır.
         public static CourseDto AsDto(this Course course)
         {
-            return new CourseDto(course.Id, course.Name, course.Description, course.Price, course.Teacher, course.VideoIds);
+            return new CourseDto(course.Id, course.Name!, course.Description!, course.Price, course.Teacher!, course.VideoIds);
         }
     }
 }
