@@ -3,6 +3,7 @@ const Blacklist = require("../models/_blacklistModel");
 const jwt = require("jsonwebtoken");
 const md5 = require("md5");
 require("dotenv").config();
+const logger = require('../../logger');
 
 //Giriş yapma fonk
 const postLogin = async (req, res, next) =>
@@ -13,15 +14,15 @@ const postLogin = async (req, res, next) =>
 
         if (!username || !password)
         {
-            return res
-                .status(400)
-                .json({ error: "Username and password are required." });
+            logger.error("Username and password are required.");
+            return res.status(400).json({ error: "Username and password are required." });
         }
 
         const user = await User.findOne({ username: username });
 
         if (!user)
         {
+            logger.error("User doesn't exist.");
             return res.status(401).json({ error: "User doesn't exist." });
         }
 
@@ -29,17 +30,17 @@ const postLogin = async (req, res, next) =>
 
         if (hashedPassword !== user.password)
         {
-            return res
-                .status(401)
-                .json({ error: "Wrong username and password combination." });
+            logger.error("Wrong username and password combination.");
+            return res.status(401).json({ error: "Wrong username and password combination." });
         }
-
+        //token üretme
         const generateAccessToken = await jwt.sign(
             { id: user.id },
             process.env.JWT_SECRET_KEY,
             { expiresIn: "24h" }
         );
 
+        logger.info(`User logged in: ${username}`);
         res.status(200).json({
             status: "success",
             token: generateAccessToken,
@@ -47,7 +48,7 @@ const postLogin = async (req, res, next) =>
         });
     } catch (error)
     {
-        console.log("postLogin Error: " + error);
+        logger.error(`postLogin Error: ${error}`);
         res.status(500).json({
             status: "error",
             code: 500,
@@ -57,49 +58,43 @@ const postLogin = async (req, res, next) =>
     }
 };
 
+
 //Kayıt olma fonk
 const postRegister = async (req, res, next) =>
 {
     try
     {
         const { username, password, role } = req.body;
-        console.log(req.body);
 
         if (!username || !password || !role)
         {
-            return res
-                .status(400) // 401 Unauthorized değil, 400 Bad Request daha uygun olur.
-                .json({ error: "Please do not leave any field blank." });
-        }
-
-        // Role değerinin geçerli olup olmadığını kontrol et
-        if (!['teacher', 'student'].includes(role))
-        {
-            return res.status(400).json({ error: "Invalid role. Must be 'teacher' or 'student'." });
+            logger.error("Please do not leave any field blank.");
+            return res.status(400).json({ error: "Please do not leave any field blank." });
         }
 
         const findUser = await User.findOne({ username: username });
-        console.log(findUser);
+
         if (!findUser)
         {
             const user = new User({
                 username: username,
                 password: md5(password),
-                role: role // Kullanıcı oluştururken role değerini de kaydet
+                role: role
             });
             await user.save();
+            logger.info(`New user registered: ${username}`);
             res.status(200).json({
                 status: "success",
                 message: "You have successfully registered.",
             });
         } else
         {
-            return res.status(409) // 409 Conflict, kayıt olan kullanıcı zaten varsa daha uygun bir durum kodu.
-                .json({ error: "This user already exists." });
+            logger.error("This user already exists.");
+            return res.status(409).json({ error: "This user already exists." });
         }
     } catch (error)
     {
-        console.log("postRegister Error: " + error);
+        logger.error(`postRegister Error: ${error}`);
         res.status(500).json({
             status: "error",
             code: 500,
@@ -186,10 +181,10 @@ const getProfile = async (req, res, next) =>
 {
     try
     {
-        const surveys = await Survey.find({ userId: req.user });
+        const courses = await courses.find({ userId: req.user });
         res.status(200).json({
             status: "success",
-            data: surveys,
+            data: courses,
             message: "Process successful",
         });
     } catch (error)
@@ -203,11 +198,23 @@ const getProfile = async (req, res, next) =>
         });
     }
 };
-
+// Kullanıcıları getiren fonksiyon
+const getUsers = async (req, res, next) =>
+{
+    try
+    {
+        const users = await User.find(); // Tüm kullanıcıları getir
+        res.status(200).json(users); // Kullanıcıları JSON formatında gönder
+    } catch (error)
+    {
+        res.status(500).json({ message: "Sunucu hatası", error: error }); // Hata durumunda 500 kodu ile hata mesajını gönder
+    }
+};
 module.exports = {
     postLogin,
     postRegister,
     getLogout,
     postChangePassword,
     getProfile,
+    getUsers,
 };

@@ -13,8 +13,8 @@ services:
       - mongo
     environment:
       - MONGODB_CONNECTION_STRING=mongodb://mongo:27017/auth-service
-      - SESSION_SECRET = G/+98Uzxc68^%it9o0-4@F7h*&U9i_o+
-      - JWT_SECRET_KEY = nWGCbKgcbEgZHkbj9atm
+      - SESSION_SECRET=G/+98Uzxc68^%it9o0-4@F7h*&U9i_o+
+      - JWT_SECRET_KEY=nWGCbKgcbEgZHkbj9atm
 
   course-service:
     container_name: Course-Service

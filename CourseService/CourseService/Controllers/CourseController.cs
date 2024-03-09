@@ -3,6 +3,7 @@ using CourseService.CourseService.Entities;
 using CourseService.CourseService.Extensions;
 using CourseService.CourseService.Repositories.CourseRepository;
 using CourseService.CourseService.Repositories.VideoRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 
@@ -15,19 +16,24 @@ namespace CourseService.CourseService.CourseController
     {
         private readonly CourseRepository _courseRepository;
         private readonly VideoRepository _videoRepository;
+        private readonly ILogger<CourseController> _logger;
 
-        public CourseController(CourseRepository coursesRepository, VideoRepository videoRepository)
+        public CourseController(ILogger<CourseController> logger, CourseRepository coursesRepository, VideoRepository videoRepository)
         {
+            _logger = logger;
             _courseRepository = coursesRepository;
             _videoRepository = videoRepository;
+
         }
+
+
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CourseDto>>> GetAsync()
         {
             var courses = await _courseRepository.GetAllAsync();
             var courseDtos = courses.Select(course => course.AsDto()).ToList(); // AsDto extension metodunu kullanarak dönüştürme
-
+            _logger.LogInformation("Getting all courses");
             return Ok(courseDtos);
         }
 
@@ -37,6 +43,7 @@ namespace CourseService.CourseService.CourseController
             var course = await _courseRepository.GetAsync(id);
             if (course == null)
             {
+                _logger.LogError("Get course error with id" + id);
                 return NotFound();
             }
 
@@ -45,6 +52,7 @@ namespace CourseService.CourseService.CourseController
         }
 
         [HttpPost]
+        [Authorize(Policy = "IsTeacher")]
         public async Task<ActionResult<CourseDto>> CreateAsync(CreateCourseDto createCourseDto)
         {
             var newCourse = new Course
@@ -61,6 +69,15 @@ namespace CourseService.CourseService.CourseController
             return CreatedAtAction(nameof(GetById), new { id = newCourse.Id }, courseDto);
 
         }
+        // Öğrenciler için kurslara kayıt olma
+        [HttpPost("{courseId}/enroll")]
+        [Authorize(Policy = "IsStudent")]
+        public Task<IActionResult> EnrollInCourse(int courseId)
+        {
+            // Kurs kayıt işlemleri...
+            return Task.FromResult<IActionResult>(Ok());
+        }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAsync(Guid id, UpdateCourseDto updateCourseDto)

@@ -46,3 +46,13 @@
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/CourseService.genruntimeconfig.cache
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/ref/CourseService.dll
 /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/obj/Debug/net8.0/CourseService.sourcelink.json
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.AspNetCore.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Extensions.Hosting.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Extensions.Logging.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Formatting.Compact.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Settings.Configuration.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
+/Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService/bin/Debug/net8.0/Serilog.Sinks.File.dll
