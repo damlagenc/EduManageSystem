@@ -3,3 +3,6 @@
 {"level":"info","message":"New user registered: irem"}
 {"level":"info","message":"User logged in: irem"}
 {"level":"info","message":"User logged in: irem"}
+{"level":"error","message":"This user already exists."}
+{"level":"info","message":"New user registered: deneme1"}
+{"level":"info","message":"User logged in: deneme1"}

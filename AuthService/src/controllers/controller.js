@@ -1,220 +1,190 @@
 const User = require("../models/_userModel");
 const Blacklist = require("../models/_blacklistModel");
 const jwt = require("jsonwebtoken");
-const md5 = require("md5");
 require("dotenv").config();
 const logger = require('../../logger');
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const { authenticateToken } = require('../middlewares/authorization');
 
-//Giriş yapma fonk
-const postLogin = async (req, res, next) =>
+
+
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+}).then(() =>
 {
+    console.log('Connected to the MongoDB');
+}).catch(err =>
+{
+    console.error('Could not connect to MongoDB...', err);
+});
+
+const postLogin = ('/api/auth/login', async (req, res) =>
+{
+    const { username, password } = req.body;
+
     try
     {
-        const { username, password } = req.body;
+        const user = await User.findOne({ username });
+        if (!user) return res.status(400).send('User not found');
 
-        if (!username || !password)
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) return res.status(400).send('Incorrect Password!');
+
+        // User matched, create JWT Payload
+        const payload = {
+            user: {
+                id: user.id,
+                username: user.username,
+                role: user.role
+            }
+        };
+
+        jwt.sign(payload, process.env.JWT_SECRET_KEY, { expiresIn: 3600 }, (err, token) =>
         {
-            logger.error("Username and password are required.");
-            return res.status(400).json({ error: "Username and password are required." });
-        }
-
-        const user = await User.findOne({ username: username });
-
-        if (!user)
-        {
-            logger.error("User doesn't exist.");
-            return res.status(401).json({ error: "User doesn't exist." });
-        }
-
-        const hashedPassword = md5(password);
-
-        if (hashedPassword !== user.password)
-        {
-            logger.error("Wrong username and password combination.");
-            return res.status(401).json({ error: "Wrong username and password combination." });
-        }
-        //token üretme
-        const generateAccessToken = await jwt.sign(
-            { id: user.id },
-            process.env.JWT_SECRET_KEY,
-            { expiresIn: "24h" }
-        );
-
-        logger.info(`User logged in: ${username}`);
-        res.status(200).json({
-            status: "success",
-            token: generateAccessToken,
-            message: "You have successfully logged in.",
+            if (err) throw err;
+            res.status(200).json({ token });
         });
+
+    } catch (e)
+    {
+        logger.error(`Login Error: ${e.message}`);
+        res.status(500).send('Server Error');
+    }
+});
+
+const postRegister = ('/api/auth/register', async (req, res) =>
+{
+    const { username, password, role } = req.body;
+
+    try
+    {
+        let user = await User.findOne({ username });
+        if (user)
+        {
+            return res.status(400).send('User already exists');
+        }
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        user = new User({
+            username,
+            password: hashedPassword,
+            role,
+        });
+
+        await user.save();
+
+        res.status(201).send('User registered successfully');
     } catch (error)
     {
-        logger.error(`postLogin Error: ${error}`);
-        res.status(500).json({
-            status: "error",
-            code: 500,
-            data: [],
-            message: "Internal Server Error",
-        });
+        logger.error(`Registration Error: ${error.message}`);
+        res.status(500).send('Error in Saving');
+    }
+});
+
+// Çıkış yapma fonksiyonu
+const getLogout = async (req, res) =>
+{
+    // Token'ı request header'dan al
+    const token = req.headers['authorization']?.split(' ')[1];
+
+    if (token)
+    {
+        // Token'ı kara listeye ekle veya başka bir yöntemle geçersiz kıl
+        // Bu örnekte, Blacklist modelini kullanarak token'ı saklıyoruz.
+        const blacklistedToken = new Blacklist({ token });
+        await blacklistedToken.save();
+
+        res.status(200).send('Logged out successfully');
+    } else
+    {
+        res.status(400).send('No token provided');
     }
 };
 
+// Şifre değiştirme fonksiyonu
 
-//Kayıt olma fonk
-const postRegister = async (req, res, next) =>
-{
-    try
-    {
-        const { username, password, role } = req.body;
-
-        if (!username || !password || !role)
-        {
-            logger.error("Please do not leave any field blank.");
-            return res.status(400).json({ error: "Please do not leave any field blank." });
-        }
-
-        const findUser = await User.findOne({ username: username });
-
-        if (!findUser)
-        {
-            const user = new User({
-                username: username,
-                password: md5(password),
-                role: role
-            });
-            await user.save();
-            logger.info(`New user registered: ${username}`);
-            res.status(200).json({
-                status: "success",
-                message: "You have successfully registered.",
-            });
-        } else
-        {
-            logger.error("This user already exists.");
-            return res.status(409).json({ error: "This user already exists." });
-        }
-    } catch (error)
-    {
-        logger.error(`postRegister Error: ${error}`);
-        res.status(500).json({
-            status: "error",
-            code: 500,
-            data: [],
-            message: "Internal Server Error",
-        });
-    }
-};
-
-//Çıkış yapma fonk
-const getLogout = async (req, res, next) =>
-{
-    try
-    {
-        const authHeader = req.headers["authorization"];
-        if (!authHeader) return res.sendStatus(204);
-
-        const checkIfBlacklisted = await Blacklist.findOne({ token: authHeader });
-        // if true, send a no content response.
-        if (checkIfBlacklisted) return res.sendStatus(204);
-        // otherwise blacklist token
-        const newBlacklist = new Blacklist({
-            token: authHeader,
-        });
-        await newBlacklist.save();
-        // Also clear request cookie on client
-
-        res.status(200).json({ message: "You are logged out!" });
-    } catch (error)
-    {
-        console.log("getLogout Error: " + error);
-        res.status(500).json({
-            status: "error",
-            code: 500,
-            data: [],
-            message: "Internal Server Error",
-        });
-    }
-};
-
-//Şifre değişikliğini gerçekleştiren fonk
 const postChangePassword = async (req, res, next) =>
 {
+    const { oldPass, newPass } = req.body;
+    // Token'dan kullanıcı ID'sini al
+    const userId = req.user.user.id;
+
+    if (!oldPass || !newPass)
+    {
+        return res.status(400).json({ error: "Please provide both old and new password." });
+    }
+
     try
     {
-        const { oldPass, newPass } = req.body;
-
-        if (oldPass && newPass)
+        const user = await User.findById(userId);
+        if (!user)
         {
-            const user = await User.findById(req.user);
-
-            const hashedPassword = md5(oldPass);
-
-            if (hashedPassword !== user.password)
-            {
-                return res
-                    .status(401)
-                    .json({ error: "Wrong username and password combination." });
-            } else
-            {
-                await User.findByIdAndUpdate(req.user, { password: md5(newPass) });
-                res
-                    .status(200)
-                    .json({ status: "success", message: "Password changed" });
-            }
-        } else
-        {
-            return res.status(401).json({ error: "Check the fields" });
+            return res.status(404).send('User not found');
         }
+
+        // Eski şifrenin doğruluğunu kontrol et
+        const isMatch = await bcrypt.compare(oldPass, user.password);
+        if (!isMatch)
+        {
+            return res.status(400).send('Incorrect old password');
+        }
+
+        // Yeni şifreyi hash'le ve güncelle
+        const hashedNewPassword = await bcrypt.hash(newPass, 10);
+        user.password = hashedNewPassword;
+        await user.save();
+
+        res.status(200).json({ message: "Password changed successfully" });
     } catch (error)
     {
         console.log("postChangePassword Error: " + error);
         res.status(500).json({
             status: "error",
-            code: 500,
-            data: [],
             message: "Internal Server Error",
         });
     }
 };
 
-//Kullanıcının profilini getiren fonk
-const getProfile = async (req, res, next) =>
+// Profil bilgilerini getirme fonksiyonu
+const getProfile = async (req, res) =>
 {
+    const userId = req.user.id; // authenticateToken middleware'inden gelen kullanıcı ID'si
+
     try
     {
-        const courses = await courses.find({ userId: req.user });
-        res.status(200).json({
-            status: "success",
-            data: courses,
-            message: "Process successful",
-        });
+        const user = await User.findById(userId).select('-password'); // Şifreyi hariç tutarak kullanıcıyı getir
+        if (!user)
+        {
+            return res.status(404).send('User not found');
+        }
+
+        res.status(200).json(user);
     } catch (error)
     {
-        console.log("getProfile Error: " + error);
-        res.status(500).json({
-            status: "error",
-            code: 500,
-            data: [],
-            message: "Internal Server Error",
-        });
+        res.status(500).send('Server error');
     }
 };
-// Kullanıcıları getiren fonksiyon
-const getUsers = async (req, res, next) =>
+// Tüm kullanıcıları listeleme fonksiyonu
+const getUsers = async (req, res) =>
 {
     try
     {
-        const users = await User.find(); // Tüm kullanıcıları getir
-        res.status(200).json(users); // Kullanıcıları JSON formatında gönder
+        const users = await User.find().select('-password'); // Kullanıcıları şifreler hariç getir
+        res.status(200).json(users);
     } catch (error)
     {
-        res.status(500).json({ message: "Sunucu hatası", error: error }); // Hata durumunda 500 kodu ile hata mesajını gönder
+        res.status(500).send('Server error');
     }
 };
 module.exports = {
     postLogin,
     postRegister,
     getLogout,
-    postChangePassword,
     getProfile,
     getUsers,
-};
+    postChangePassword
+}
+

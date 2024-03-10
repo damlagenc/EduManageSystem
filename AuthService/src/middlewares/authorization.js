@@ -5,7 +5,7 @@ const authenticateToken = async (req, res, next) =>
 {
     const authHeader = req.headers["authorization"];
     if (!authHeader) return res.sendStatus(401);
-    
+
     // Token'ı Bearer önekinden ayırma
     const token = authHeader && authHeader.split(' ')[1];
 
@@ -19,17 +19,10 @@ const authenticateToken = async (req, res, next) =>
 
     console.log(token);
     //token doğrulama
-    jwt.verify(token, process.env.JWT_SECRET_KEY, async (err, decoded) =>
+    jwt.verify(token, process.env.JWT_SECRET_KEY, (err, user) =>
     {
-        if (err)
-        {
-            console.log(err);
-            return res.status(401).json({ message: "This session has expired. Please login" });
-
-        }
-
-        const { id } = decoded;
-        req.user = id;
+        if (err) return res.sendStatus(403); // Token geçersiz ise 403 döner
+        req.user = user;
         next();
     });
 };

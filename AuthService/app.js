@@ -21,19 +21,7 @@ require("./src/config/database");
 //Routelarımızın olduğu dosyayı ekleme
 const Route = require("./src/routers/route");
 
-//JWT token doğrulama endpointi
-app.post('/verifyToken', (req, res) =>
-{
-  const { token } = req.body;
-  jwt.verify(token, process.env.JWT_SECRET_KEY, (err, decoded) =>
-  {
-    if (err)
-    {
-      return res.status(401).json({ valid: false, message: 'Token is invalid' });
-    }
-    return res.status(200).json({ valid: true, decoded });
-  });
-});
+
 
 //Routelara yönlendirme yapma
 app.use("/", Route);

@@ -50,9 +50,28 @@ namespace CourseService.CourseService.CourseController
             var courseDto = course.AsDto(); // AsDto extension metodunu kullanarak dönüştürme
             return Ok(courseDto);
         }
+        [HttpGet("{courseId}/download")]
+        [Authorize] // Kullanıcı girişi gerektirir
+        public async Task<IActionResult> DownloadCourse(Guid courseId)
+        {
+            var course = await _courseRepository.GetAsync(courseId);
+            if (course == null)
+            {
+                return NotFound("Course not found");
+            }
+
+            // Kullanıcının kursu indirme hakkı olup olmadığı kontrol edilir
+            // Bu örnekte, tüm kullanıcıların kursu indirebildiği varsayılmaktadır.
+            // Gerçek bir uygulamada, kullanıcının kursu satın almış olması gibi ek kontroller gerekebilir.
+
+            string downloadLink = $"https://localhost:5008/courses/{courseId}/download.zip";
+            return Ok(new { Message = "Download link generated successfully.", Link = downloadLink });
+        }
+
 
         [HttpPost]
-        [Authorize(Policy = "IsTeacher")]
+        [Authorize(Roles = "teacher")]
+
         public async Task<ActionResult<CourseDto>> CreateAsync(CreateCourseDto createCourseDto)
         {
             var newCourse = new Course
@@ -69,17 +88,29 @@ namespace CourseService.CourseService.CourseController
             return CreatedAtAction(nameof(GetById), new { id = newCourse.Id }, courseDto);
 
         }
-        // Öğrenciler için kurslara kayıt olma
-        [HttpPost("{courseId}/enroll")]
-        [Authorize(Policy = "IsStudent")]
-        public Task<IActionResult> EnrollInCourse(int courseId)
+
+        [HttpPost("{courseId}/purchase")]
+        [Authorize(Roles = "student")]
+        public async Task<IActionResult> PurchaseCourse(Guid courseId)
         {
-            // Kurs kayıt işlemleri...
-            return Task.FromResult<IActionResult>(Ok());
+            var course = await _courseRepository.GetAsync(courseId);
+            if (course == null)
+            {
+                return NotFound("Course not found");
+            }
+
+            // Satın alma işlemi burada gerçekleştirilecek. Örnek amaçlı basit tutulmuştur.
+            // Gerçek bir senaryoda, ödeme işlemi başarılı olduktan sonra kullanıcının erişim hakları güncellenir.
+
+            _logger.LogInformation($"User {User.Identity.Name} purchased course {course.Name}");
+            return Ok("Course purchased successfully.");
         }
 
 
+
         [HttpPut("{id}")]
+        [Authorize(Roles = "teacher")]
+
         public async Task<IActionResult> PutAsync(Guid id, UpdateCourseDto updateCourseDto)
         {
             var course = await _courseRepository.GetAsync(id);
@@ -99,6 +130,8 @@ namespace CourseService.CourseService.CourseController
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "teacher")]
+
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
             var course = await _courseRepository.GetAsync(id);
@@ -108,7 +141,7 @@ namespace CourseService.CourseService.CourseController
             }
 
             await _courseRepository.RemoveAsync(id);
-            return NoContent();
+            return Ok("Course successfully deleted.");
         }
 
         /*
@@ -119,6 +152,8 @@ namespace CourseService.CourseService.CourseController
          */
 
         [HttpPost("{courseId}/upload-video")]
+        [Authorize(Roles = "teacher")]
+
         public async Task<IActionResult> UploadVideo(Guid courseId, IFormFile videoFile)
         {
             var course = await _courseRepository.GetAsync(courseId);
@@ -137,6 +172,8 @@ namespace CourseService.CourseService.CourseController
             return Ok(new { VideoId = course.VideoIds.LastOrDefault() });
         }
         [HttpDelete("{courseId}/delete-video/{videoId}")]
+        [Authorize(Roles = "teacher")]
+
         public async Task<IActionResult> DeleteVideo(Guid courseId, string videoId)
         {
             var course = await _courseRepository.GetAsync(courseId);
@@ -155,7 +192,7 @@ namespace CourseService.CourseService.CourseController
             course.VideoIds.Remove(videoId);
             await _courseRepository.UpdateAsync(course);
 
-            return NoContent();
+            return Ok("Video successfully deleted.");
         }
 
 
