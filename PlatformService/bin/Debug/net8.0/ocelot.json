@@ -1,0 +1,74 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Auth",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "auth-service",
+                    "Port": 3001
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Auth",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Delete",
+                "Put"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Courses ",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "course-service",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Courses",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Put"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Courses/{courseId} ",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "course-service",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Courses/{courseId}",
+            "UpstreamHttpMethod": [
+                "Delete",
+                "Get"
+            ]
+        }
+    ],
+    "SwaggerEndPoints": [
+        {
+            "Key": "authservice",
+            "Config": [
+                {
+                    "Name": "Auth Service API",
+                    "Version": "v1",
+                    "Url": "http://localhost:3001/api-docs/"
+                }
+            ]
+        },
+        {
+            "Key": "courseservice",
+            "Config": [
+                {
+                    "Name": "Course Service API",
+                    "Version": "v1",
+                    "Url": "http://localhost:5008/swagger/"
+                }
+            ]
+        }
+    ]
+}

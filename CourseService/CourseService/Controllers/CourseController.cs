@@ -11,7 +11,7 @@ namespace CourseService.CourseService.CourseController
 {
 
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CourseController : ControllerBase
     {
         private readonly CourseRepository _courseRepository;
@@ -51,7 +51,7 @@ namespace CourseService.CourseService.CourseController
             return Ok(courseDto);
         }
         [HttpGet("{courseId}/download")]
-        [Authorize] // Kullanıcı girişi gerektirir
+        //[Authorize] // Kullanıcı girişi gerektirir
         public async Task<IActionResult> DownloadCourse(Guid courseId)
         {
             var course = await _courseRepository.GetAsync(courseId);
@@ -70,7 +70,7 @@ namespace CourseService.CourseService.CourseController
 
 
         [HttpPost]
-        [Authorize(Roles = "teacher")]
+        //[Authorize(Roles = "teacher")]
 
         public async Task<ActionResult<CourseDto>> CreateAsync(CreateCourseDto createCourseDto)
         {
@@ -80,7 +80,7 @@ namespace CourseService.CourseService.CourseController
                 Name = createCourseDto.Name,
                 Description = createCourseDto.Description,
                 Price = createCourseDto.Price,
-                Teacher = "New Teacher", // Bu kısmı dinamik olarak ayarlamayı düşünebilirsiniz
+                Teacher = "New Teacher", // Bu kısmı dinamik olarak ayarla
             };
 
             await _courseRepository.CreateAsync(newCourse);
@@ -90,7 +90,7 @@ namespace CourseService.CourseService.CourseController
         }
 
         [HttpPost("{courseId}/purchase")]
-        [Authorize(Roles = "student")]
+        //[Authorize(Roles = "student")]
         public async Task<IActionResult> PurchaseCourse(Guid courseId)
         {
             var course = await _courseRepository.GetAsync(courseId);
@@ -109,7 +109,7 @@ namespace CourseService.CourseService.CourseController
 
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "teacher")]
+        //[Authorize(Roles = "teacher")]
 
         public async Task<IActionResult> PutAsync(Guid id, UpdateCourseDto updateCourseDto)
         {
@@ -130,7 +130,7 @@ namespace CourseService.CourseService.CourseController
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "teacher")]
+        //[Authorize(Roles = "teacher")]
 
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
@@ -152,7 +152,7 @@ namespace CourseService.CourseService.CourseController
          */
 
         [HttpPost("{courseId}/upload-video")]
-        [Authorize(Roles = "teacher")]
+        //[Authorize(Roles = "teacher")]
 
         public async Task<IActionResult> UploadVideo(Guid courseId, IFormFile videoFile)
         {
@@ -172,7 +172,7 @@ namespace CourseService.CourseService.CourseController
             return Ok(new { VideoId = course.VideoIds.LastOrDefault() });
         }
         [HttpDelete("{courseId}/delete-video/{videoId}")]
-        [Authorize(Roles = "teacher")]
+        //[Authorize(Roles = "teacher")]
 
         public async Task<IActionResult> DeleteVideo(Guid courseId, string videoId)
         {

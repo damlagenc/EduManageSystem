@@ -1,0 +1,79 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "REST API",
+        "version": "1.0.0",
+        "description": "This is a REST API for the EduManage app",
+        "contact": {
+            "email": " "
+        }
+    },
+    "basePath": "/",
+    "paths": {
+        "/swagger.json": {
+            "get": {
+                "tags": [],
+                "description": "",
+                "responses": {
+                    "200": {
+                        "description": "Returns the swagger.json document"
+                    }
+                },
+                "parameters": []
+            }
+        },
+        "/auth/login": {
+            "post": {
+                "tags": [],
+                "summary": "Authenticate the user",
+                "description": "Validate if exist an user with that username and password",
+                "responses": {
+                    "200": {
+                        "description": "Returns the token and the info of the user"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "required": false
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "addedParameters": {
+                    "body": {
+                        "body": true
+                    }
+                }
+            }
+        },
+        "/auth/signup": {
+            "post": {
+                "tags": [],
+                "description": "",
+                "responses": {
+                    "200": {
+                        "description": "Returns example 1"
+                    }
+                },
+                "parameters": []
+            }
+        }
+    }
+}

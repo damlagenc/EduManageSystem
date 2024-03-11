@@ -1,0 +1,60 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/auth/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 3001
+                }
+            ],
+            "UpstreamPathTemplate": "/auth/{everything}",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Put",
+                "Delete"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5008
+                }
+            ],
+            "UpstreamPathTemplate": "/courses/{everything}",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Put",
+                "Delete"
+            ]
+        }
+    ],
+    "SwaggerEndPoints": [
+        {
+            "Key": "authservice",
+            "Config": [
+                {
+                    "Name": "AuthService API",
+                    "Version": "v1",
+                    "Url": "http://localhost:3001/api-docs"
+                }
+            ]
+        },
+        {
+            "Key": "courseservice",
+            "Config": [
+                {
+                    "Name": "CourseService API",
+                    "Version": "v1",
+                    "Url": "http://localhost:5008/swagger/index.html"
+                }
+            ]
+        }
+    ]
+}

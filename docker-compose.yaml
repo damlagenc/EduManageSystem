@@ -7,7 +7,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx.conf
-      - ./data:/data
+
     depends_on:
       - platform-service
 
@@ -18,7 +18,7 @@ services:
       context: ./AuthService
       dockerfile: Dockerfile
     ports:
-      - "3002:3001"
+      - "3002:80"
     depends_on:
       - mongo
     environment:
@@ -47,6 +47,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5015:80"
+    depends_on:
+      - mongo
 
   mongo:
     image: mongo

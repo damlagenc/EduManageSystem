@@ -1,0 +1,935 @@
+2024-03-11 01:08:05.324 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 01:08:05.358 +03:00 [DBG] Hosting starting
+2024-03-11 01:08:05.373 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-11 01:08:05.373 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-11 01:08:05.373 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 01:08:05.373 +03:00 [INF] Hosting environment: Development
+2024-03-11 01:08:05.373 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-11 01:08:05.373 +03:00 [DBG] Hosting started
+2024-03-11 01:08:21.155 +03:00 [DBG] Connection id "0HN219QCHH547" accepted.
+2024-03-11 01:08:21.156 +03:00 [DBG] Connection id "0HN219QCHH548" accepted.
+2024-03-11 01:08:21.156 +03:00 [DBG] Connection id "0HN219QCHH548" started.
+2024-03-11 01:08:21.156 +03:00 [DBG] Connection id "0HN219QCHH547" started.
+2024-03-11 01:08:21.189 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 01:08:21.193 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-11 01:08:21.206 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 01:08:21.206 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 01:08:21.243 +03:00 [DBG] Connection id "0HN219QCHH547" completed keep alive response.
+2024-03-11 01:08:21.243 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 57.0349ms
+2024-03-11 01:08:21.332 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - null null
+2024-03-11 01:08:21.332 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-03-11 01:08:21.332 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 01:08:21.369 +03:00 [DBG] Connection id "0HN219QCHH547" completed keep alive response.
+2024-03-11 01:08:21.369 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.9669ms
+2024-03-11 01:08:21.387 +03:00 [DBG] Connection id "0HN219QCHH547" received FIN.
+2024-03-11 01:08:21.387 +03:00 [DBG] Connection id "0HN219QCHH548" received FIN.
+2024-03-11 01:08:21.390 +03:00 [DBG] Connection id "0HN219QCHH547" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 01:08:21.390 +03:00 [DBG] Connection id "0HN219QCHH548" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 01:08:21.390 +03:00 [DBG] Connection id "0HN219QCHH547" disconnecting.
+2024-03-11 01:08:21.390 +03:00 [DBG] Connection id "0HN219QCHH548" disconnecting.
+2024-03-11 01:08:21.391 +03:00 [DBG] Connection id "0HN219QCHH548" stopped.
+2024-03-11 01:08:21.391 +03:00 [DBG] Connection id "0HN219QCHH547" stopped.
+2024-03-11 01:08:27.100 +03:00 [DBG] Connection id "0HN219QCHH549" accepted.
+2024-03-11 01:08:27.100 +03:00 [DBG] Connection id "0HN219QCHH549" started.
+2024-03-11 01:08:27.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 01:08:27.101 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 01:08:27.101 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 01:08:27.102 +03:00 [DBG] Connection id "0HN219QCHH549" completed keep alive response.
+2024-03-11 01:08:27.103 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 1.9834ms
+2024-03-11 01:08:47.052 +03:00 [DBG] Connection id "0HN219QCHH549" received FIN.
+2024-03-11 01:08:47.053 +03:00 [DBG] Connection id "0HN219QCHH549" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 01:08:47.053 +03:00 [DBG] Connection id "0HN219QCHH549" disconnecting.
+2024-03-11 01:08:47.053 +03:00 [DBG] Connection id "0HN219QCHH549" stopped.
+2024-03-11 01:09:05.017 +03:00 [DBG] Connection id "0HN219QCHH54A" accepted.
+2024-03-11 01:09:05.019 +03:00 [DBG] Connection id "0HN219QCHH54A" started.
+2024-03-11 01:09:05.019 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 01:09:05.019 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 01:09:05.019 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 01:09:05.020 +03:00 [DBG] Connection id "0HN219QCHH54A" completed keep alive response.
+2024-03-11 01:09:05.020 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 1.1426ms
+2024-03-11 01:10:07.474 +03:00 [DBG] Connection id "0HN219QCHH54A" received FIN.
+2024-03-11 01:10:07.476 +03:00 [DBG] Connection id "0HN219QCHH54A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 01:10:07.476 +03:00 [DBG] Connection id "0HN219QCHH54A" disconnecting.
+2024-03-11 01:10:07.476 +03:00 [DBG] Connection id "0HN219QCHH54A" stopped.
+2024-03-11 01:29:33.057 +03:00 [DBG] Connection id "0HN219QCHH54B" accepted.
+2024-03-11 01:29:33.058 +03:00 [DBG] Connection id "0HN219QCHH54B" started.
+2024-03-11 01:29:33.059 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 01:29:33.060 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 01:29:33.060 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 01:29:33.061 +03:00 [DBG] Connection id "0HN219QCHH54B" completed keep alive response.
+2024-03-11 01:29:33.062 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 2.5275ms
+2024-03-11 01:30:44.499 +03:00 [DBG] Connection id "0HN219QCHH54B" received FIN.
+2024-03-11 01:30:44.501 +03:00 [DBG] Connection id "0HN219QCHH54B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 01:30:44.501 +03:00 [DBG] Connection id "0HN219QCHH54B" disconnecting.
+2024-03-11 01:30:44.502 +03:00 [DBG] Connection id "0HN219QCHH54B" stopped.
+2024-03-11 02:10:51.443 +03:00 [DBG] Connection id "0HN219QCHH54C" accepted.
+2024-03-11 02:10:51.445 +03:00 [DBG] Connection id "0HN219QCHH54C" started.
+2024-03-11 02:10:51.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 02:10:51.447 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 02:10:51.447 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 02:10:51.449 +03:00 [DBG] Connection id "0HN219QCHH54C" completed keep alive response.
+2024-03-11 02:10:51.449 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 3.1785ms
+2024-03-11 02:11:58.697 +03:00 [DBG] Connection id "0HN219QCHH54C" received FIN.
+2024-03-11 02:11:58.697 +03:00 [DBG] Connection id "0HN219QCHH54C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 02:11:58.698 +03:00 [DBG] Connection id "0HN219QCHH54C" disconnecting.
+2024-03-11 02:11:58.698 +03:00 [DBG] Connection id "0HN219QCHH54C" stopped.
+2024-03-11 02:29:05.847 +03:00 [DBG] Connection id "0HN219QCHH54D" accepted.
+2024-03-11 02:29:05.848 +03:00 [DBG] Connection id "0HN219QCHH54D" started.
+2024-03-11 02:29:05.849 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html/swagger.json - null null
+2024-03-11 02:29:05.849 +03:00 [DBG] No candidates found for the request path '/swagger/index.html/swagger.json'
+2024-03-11 02:29:05.850 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 02:29:05.855 +03:00 [DBG] Connection id "0HN219QCHH54D" completed keep alive response.
+2024-03-11 02:29:05.855 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html/swagger.json - 404 0 null 6.182ms
+2024-03-11 02:31:16.908 +03:00 [DBG] Connection id "0HN219QCHH54D" disconnecting.
+2024-03-11 02:31:16.909 +03:00 [DBG] Connection id "0HN219QCHH54D" stopped.
+2024-03-11 02:31:16.909 +03:00 [DBG] Connection id "0HN219QCHH54D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 02:37:52.731 +03:00 [INF] Application is shutting down...
+2024-03-11 02:37:52.733 +03:00 [DBG] Hosting stopping
+2024-03-11 02:37:52.742 +03:00 [DBG] Hosting stopped
+crosoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 02:15:16.723 +03:00 [DBG] Hosting starting
+2024-03-11 02:15:16.750 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5008: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-03-11 02:38:05.851 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 02:38:05.883 +03:00 [DBG] Hosting starting
+2024-03-11 02:38:05.894 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-11 02:38:05.894 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-11 02:38:05.894 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 02:38:05.894 +03:00 [INF] Hosting environment: Development
+2024-03-11 02:38:05.894 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-11 02:38:05.894 +03:00 [DBG] Hosting started
+2024-03-11 02:51:32.595 +03:00 [DBG] Connection id "0HN21BK1NMH2R" accepted.
+2024-03-11 02:51:32.598 +03:00 [DBG] Connection id "0HN21BK1NMH2R" started.
+2024-03-11 02:51:32.616 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger.json - null null
+2024-03-11 02:51:32.618 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-11 02:51:32.629 +03:00 [DBG] No candidates found for the request path '/swagger/swagger.json'
+2024-03-11 02:51:32.629 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 02:51:32.637 +03:00 [DBG] The request path /swagger.json does not match an existing file
+2024-03-11 02:51:32.638 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 02:51:32.638 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-03-11 02:51:32.639 +03:00 [DBG] Connection id "0HN21BK1NMH2R" completed keep alive response.
+2024-03-11 02:51:32.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger.json - 404 0 null 24.7685ms
+2024-03-11 02:51:32.642 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5008/swagger/swagger.json, Response status code: 404
+2024-03-11 02:53:43.827 +03:00 [DBG] Connection id "0HN21BK1NMH2R" disconnecting.
+2024-03-11 02:53:43.831 +03:00 [DBG] Connection id "0HN21BK1NMH2R" stopped.
+2024-03-11 02:53:43.837 +03:00 [DBG] Connection id "0HN21BK1NMH2R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 02:53:44.057 +03:00 [DBG] Connection id "0HN21BK1NMH2S" accepted.
+2024-03-11 02:53:44.057 +03:00 [DBG] Connection id "0HN21BK1NMH2S" started.
+2024-03-11 02:53:44.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger.json - null null
+2024-03-11 02:53:44.058 +03:00 [DBG] No candidates found for the request path '/swagger/swagger.json'
+2024-03-11 02:53:44.058 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 02:53:44.059 +03:00 [DBG] The request path /swagger.json does not match an existing file
+2024-03-11 02:53:44.059 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 02:53:44.060 +03:00 [DBG] Connection id "0HN21BK1NMH2S" completed keep alive response.
+2024-03-11 02:53:44.060 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger.json - 404 0 null 2.1228ms
+2024-03-11 02:53:44.060 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5008/swagger/swagger.json, Response status code: 404
+2024-03-11 02:55:55.968 +03:00 [DBG] Connection id "0HN21BK1NMH2S" disconnecting.
+2024-03-11 02:55:55.971 +03:00 [DBG] Connection id "0HN21BK1NMH2S" stopped.
+2024-03-11 02:55:55.972 +03:00 [DBG] Connection id "0HN21BK1NMH2S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:12:21.342 +03:00 [INF] Application is shutting down...
+2024-03-11 04:12:21.345 +03:00 [DBG] Hosting stopping
+2024-03-11 04:12:21.354 +03:00 [DBG] Hosting stopped
+2024-03-11 04:12:35.325 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 04:12:35.363 +03:00 [DBG] Hosting starting
+2024-03-11 04:12:35.381 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-11 04:12:35.381 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-11 04:12:35.381 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 04:12:35.381 +03:00 [INF] Hosting environment: Development
+2024-03-11 04:12:35.381 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-11 04:12:35.381 +03:00 [DBG] Hosting started
+2024-03-11 04:17:48.697 +03:00 [INF] Application is shutting down...
+2024-03-11 04:17:48.698 +03:00 [DBG] Hosting stopping
+2024-03-11 04:17:48.711 +03:00 [DBG] Hosting stopped
+2024-03-11 04:17:55.148 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-11 04:17:55.179 +03:00 [DBG] Hosting starting
+2024-03-11 04:17:55.190 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-11 04:17:55.190 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-11 04:17:55.190 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 04:17:55.190 +03:00 [INF] Hosting environment: Development
+2024-03-11 04:17:55.190 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-11 04:17:55.190 +03:00 [DBG] Hosting started
+2024-03-11 04:18:01.554 +03:00 [DBG] Connection id "0HN21D4C5F99F" accepted.
+2024-03-11 04:18:01.555 +03:00 [DBG] Connection id "0HN21D4C5F99G" accepted.
+2024-03-11 04:18:01.555 +03:00 [DBG] Connection id "0HN21D4C5F99F" started.
+2024-03-11 04:18:01.555 +03:00 [DBG] Connection id "0HN21D4C5F99G" started.
+2024-03-11 04:18:01.589 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-11 04:18:01.592 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-11 04:18:01.604 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-11 04:18:01.604 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 04:18:01.640 +03:00 [DBG] Connection id "0HN21D4C5F99F" completed keep alive response.
+2024-03-11 04:18:01.641 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 54.1661ms
+2024-03-11 04:18:01.736 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - null null
+2024-03-11 04:18:01.736 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-03-11 04:18:01.736 +03:00 [DBG] Request did not match any endpoints
+2024-03-11 04:18:01.774 +03:00 [DBG] Connection id "0HN21D4C5F99F" completed keep alive response.
+2024-03-11 04:18:01.774 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.2779ms
+2024-03-11 04:18:03.699 +03:00 [DBG] Connection id "0HN21D4C5F99F" received FIN.
+2024-03-11 04:18:03.699 +03:00 [DBG] Connection id "0HN21D4C5F99G" received FIN.
+2024-03-11 04:18:03.702 +03:00 [DBG] Connection id "0HN21D4C5F99F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:18:03.702 +03:00 [DBG] Connection id "0HN21D4C5F99G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:18:03.704 +03:00 [DBG] Connection id "0HN21D4C5F99G" disconnecting.
+2024-03-11 04:18:03.704 +03:00 [DBG] Connection id "0HN21D4C5F99F" disconnecting.
+2024-03-11 04:18:03.705 +03:00 [DBG] Connection id "0HN21D4C5F99G" stopped.
+2024-03-11 04:18:03.705 +03:00 [DBG] Connection id "0HN21D4C5F99F" stopped.
+2024-03-11 04:18:20.381 +03:00 [DBG] Connection id "0HN21D4C5F99H" accepted.
+2024-03-11 04:18:20.382 +03:00 [DBG] Connection id "0HN21D4C5F99H" started.
+2024-03-11 04:18:20.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course - null null
+2024-03-11 04:18:20.389 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course'
+2024-03-11 04:18:20.393 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)' with route pattern 'api/Course' is valid for the request path '/api/Course'
+2024-03-11 04:18:20.393 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:18:20.398 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:18:20.399 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-03-11 04:18:20.400 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:18:20.413 +03:00 [INF] Route matched with {action = "Get", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CourseService.CourseService.Dtos.CourseDto]]] GetAsync() on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:18:20.414 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:18:20.414 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:18:20.414 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:18:20.414 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:18:20.414 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:18:20.415 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:18:20.444 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:18:21.291 +03:00 [INF] Getting all courses
+2024-03-11 04:18:21.294 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:18:21.295 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:18:21.295 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:18:21.295 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:18:21.295 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:18:21.295 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:18:21.295 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CourseService.CourseService.Dtos.CourseDto, CourseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 04:18:21.308 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService) in 891.4551ms
+2024-03-11 04:18:21.308 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:18:21.309 +03:00 [DBG] Connection id "0HN21D4C5F99H" completed keep alive response.
+2024-03-11 04:18:21.309 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course - 200 null application/json; charset=utf-8 927.0087ms
+2024-03-11 04:18:23.702 +03:00 [DBG] Connection id "0HN21D4C5F99H" received FIN.
+2024-03-11 04:18:23.703 +03:00 [DBG] Connection id "0HN21D4C5F99H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:18:23.703 +03:00 [DBG] Connection id "0HN21D4C5F99H" disconnecting.
+2024-03-11 04:18:23.703 +03:00 [DBG] Connection id "0HN21D4C5F99H" stopped.
+2024-03-11 04:18:46.399 +03:00 [DBG] Connection id "0HN21D4C5F99I" accepted.
+2024-03-11 04:18:46.401 +03:00 [DBG] Connection id "0HN21D4C5F99I" started.
+2024-03-11 04:18:46.401 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/api/Course - application/json 65
+2024-03-11 04:18:46.402 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course'
+2024-03-11 04:18:46.402 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.CreateAsync (CourseService)' with route pattern 'api/Course' is valid for the request path '/api/Course'
+2024-03-11 04:18:46.402 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.CreateAsync (CourseService)'
+2024-03-11 04:18:46.402 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:18:46.404 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:18:46.404 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.CreateAsync (CourseService)'
+2024-03-11 04:18:46.415 +03:00 [INF] Route matched with {action = "Create", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] CreateAsync(CourseService.CourseService.Dtos.CreateCourseDto) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:18:46.415 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:18:46.416 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:18:46.416 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:18:46.416 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:18:46.416 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:18:46.416 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:18:46.416 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:18:46.418 +03:00 [DBG] Attempting to bind parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto' ...
+2024-03-11 04:18:46.419 +03:00 [DBG] Attempting to bind parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto' using the name '' in request data ...
+2024-03-11 04:18:46.420 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-11 04:18:46.423 +03:00 [DBG] Connection id "0HN21D4C5F99I", Request id "0HN21D4C5F99I:00000001": started reading request body.
+2024-03-11 04:18:46.423 +03:00 [DBG] Connection id "0HN21D4C5F99I", Request id "0HN21D4C5F99I:00000001": done reading request body.
+2024-03-11 04:18:46.426 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'CourseService.CourseService.Dtos.CreateCourseDto'
+2024-03-11 04:18:46.426 +03:00 [DBG] Done attempting to bind parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto'.
+2024-03-11 04:18:46.426 +03:00 [DBG] Done attempting to bind parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto'.
+2024-03-11 04:18:46.426 +03:00 [DBG] Attempting to validate the bound parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto' ...
+2024-03-11 04:18:46.430 +03:00 [DBG] Done attempting to validate the bound parameter 'createCourseDto' of type 'CourseService.CourseService.Dtos.CreateCourseDto'.
+2024-03-11 04:18:46.584 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:18:46.584 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:18:46.584 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:18:46.584 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:18:46.584 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:18:46.584 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:18:46.584 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'CourseService.CourseService.Dtos.CourseDto'.
+2024-03-11 04:18:46.598 +03:00 [DBG] Found the endpoints ["CourseService.CourseService.CourseController.CourseController.GetById (CourseService)"] for address (id=[870570be-b2fb-4dfb-9996-56b5950b31ec],action=[GetById],controller=[Course])
+2024-03-11 04:18:46.600 +03:00 [DBG] Successfully processed template api/Course/{id} for CourseService.CourseService.CourseController.CourseController.GetById (CourseService) resulting in /api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec and 
+2024-03-11 04:18:46.600 +03:00 [DBG] Link generation succeeded for endpoints ["CourseService.CourseService.CourseController.CourseController.GetById (CourseService)"] with result /api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec
+2024-03-11 04:18:46.601 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.CreateAsync (CourseService) in 184.9246ms
+2024-03-11 04:18:46.601 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.CreateAsync (CourseService)'
+2024-03-11 04:18:46.601 +03:00 [DBG] Connection id "0HN21D4C5F99I" completed keep alive response.
+2024-03-11 04:18:46.601 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/api/Course - 201 null application/json; charset=utf-8 199.3487ms
+2024-03-11 04:18:48.705 +03:00 [DBG] Connection id "0HN21D4C5F99I" received FIN.
+2024-03-11 04:18:48.705 +03:00 [DBG] Connection id "0HN21D4C5F99I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:18:48.705 +03:00 [DBG] Connection id "0HN21D4C5F99I" disconnecting.
+2024-03-11 04:18:48.705 +03:00 [DBG] Connection id "0HN21D4C5F99I" stopped.
+2024-03-11 04:19:05.937 +03:00 [DBG] Connection id "0HN21D4C5F99J" accepted.
+2024-03-11 04:19:05.938 +03:00 [DBG] Connection id "0HN21D4C5F99J" started.
+2024-03-11 04:19:05.938 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course - null null
+2024-03-11 04:19:05.938 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course'
+2024-03-11 04:19:05.938 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)' with route pattern 'api/Course' is valid for the request path '/api/Course'
+2024-03-11 04:19:05.938 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:19:05.938 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:19:05.940 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:19:05.940 +03:00 [INF] Route matched with {action = "Get", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CourseService.CourseService.Dtos.CourseDto]]] GetAsync() on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:19:05.940 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:19:05.940 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:19:05.940 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:19:05.940 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:19:05.940 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:19:05.941 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:19:05.943 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:19:06.026 +03:00 [INF] Getting all courses
+2024-03-11 04:19:06.027 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:19:06.027 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:19:06.027 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:19:06.027 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:19:06.027 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:19:06.027 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:19:06.027 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CourseService.CourseService.Dtos.CourseDto, CourseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 04:19:06.027 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService) in 86.685ms
+2024-03-11 04:19:06.027 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:19:06.027 +03:00 [DBG] Connection id "0HN21D4C5F99J" completed keep alive response.
+2024-03-11 04:19:06.028 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course - 200 null application/json; charset=utf-8 89.49ms
+2024-03-11 04:19:08.706 +03:00 [DBG] Connection id "0HN21D4C5F99J" received FIN.
+2024-03-11 04:19:08.706 +03:00 [DBG] Connection id "0HN21D4C5F99J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:19:08.706 +03:00 [DBG] Connection id "0HN21D4C5F99J" disconnecting.
+2024-03-11 04:19:08.706 +03:00 [DBG] Connection id "0HN21D4C5F99J" stopped.
+2024-03-11 04:19:25.630 +03:00 [DBG] Connection id "0HN21D4C5F99K" accepted.
+2024-03-11 04:19:25.630 +03:00 [DBG] Connection id "0HN21D4C5F99K" started.
+2024-03-11 04:19:25.630 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - null null
+2024-03-11 04:19:25.630 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:19:25.630 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:19:25.630 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:19:25.631 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:19:25.631 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:19:25.640 +03:00 [INF] Route matched with {action = "GetById", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] GetById(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:19:25.640 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:19:25.640 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:19:25.640 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:19:25.640 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:19:25.640 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:19:25.640 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:19:25.640 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:19:25.640 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:19:25.641 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:19:25.641 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:19:25.641 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:19:25.641 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:19:25.641 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:19:25.766 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:19:25.766 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:19:25.766 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:19:25.766 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:19:25.766 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:19:25.766 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:19:25.766 +03:00 [INF] Executing OkObjectResult, writing value of type 'CourseService.CourseService.Dtos.CourseDto'.
+2024-03-11 04:19:25.766 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetById (CourseService) in 126.1751ms
+2024-03-11 04:19:25.766 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:19:25.766 +03:00 [DBG] Connection id "0HN21D4C5F99K" completed keep alive response.
+2024-03-11 04:19:25.766 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 200 null application/json; charset=utf-8 136.0406ms
+2024-03-11 04:19:28.708 +03:00 [DBG] Connection id "0HN21D4C5F99K" received FIN.
+2024-03-11 04:19:28.708 +03:00 [DBG] Connection id "0HN21D4C5F99K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:19:28.708 +03:00 [DBG] Connection id "0HN21D4C5F99K" disconnecting.
+2024-03-11 04:19:28.709 +03:00 [DBG] Connection id "0HN21D4C5F99K" stopped.
+2024-03-11 04:20:05.992 +03:00 [DBG] Connection id "0HN21D4C5F99L" accepted.
+2024-03-11 04:20:05.993 +03:00 [DBG] Connection id "0HN21D4C5F99L" started.
+2024-03-11 04:20:05.994 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - application/json 93
+2024-03-11 04:20:05.994 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:05.994 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:05.994 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:05.995 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:20:05.995 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:20:05.995 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:06.004 +03:00 [INF] Route matched with {action = "Put", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutAsync(System.Guid, CourseService.CourseService.Dtos.UpdateCourseDto) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:20:06.004 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:20:06.004 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:20:06.004 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:20:06.004 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:20:06.004 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:20:06.004 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:06.010 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:06.013 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:06.014 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:20:06.014 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:06.014 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:06.014 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:06.014 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:06.014 +03:00 [DBG] Attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' ...
+2024-03-11 04:20:06.014 +03:00 [DBG] Attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' using the name '' in request data ...
+2024-03-11 04:20:06.015 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-11 04:20:06.018 +03:00 [DBG] Connection id "0HN21D4C5F99L", Request id "0HN21D4C5F99L:00000001": started reading request body.
+2024-03-11 04:20:06.019 +03:00 [DBG] Connection id "0HN21D4C5F99L", Request id "0HN21D4C5F99L:00000001": done reading request body.
+2024-03-11 04:20:06.020 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'CourseService.CourseService.Dtos.UpdateCourseDto'
+2024-03-11 04:20:06.020 +03:00 [DBG] Done attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:06.020 +03:00 [DBG] Done attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:06.020 +03:00 [DBG] Attempting to validate the bound parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' ...
+2024-03-11 04:20:06.023 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:06.235 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-03-11 04:20:06.235 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService) in 230.9926ms
+2024-03-11 04:20:06.235 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:06.236 +03:00 [DBG] Connection id "0HN21D4C5F99L" completed keep alive response.
+2024-03-11 04:20:06.236 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 204 null null 241.922ms
+2024-03-11 04:20:08.716 +03:00 [DBG] Connection id "0HN21D4C5F99L" received FIN.
+2024-03-11 04:20:08.717 +03:00 [DBG] Connection id "0HN21D4C5F99L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:20:08.717 +03:00 [DBG] Connection id "0HN21D4C5F99L" disconnecting.
+2024-03-11 04:20:08.717 +03:00 [DBG] Connection id "0HN21D4C5F99L" stopped.
+2024-03-11 04:20:16.013 +03:00 [DBG] Connection id "0HN21D4C5F99M" accepted.
+2024-03-11 04:20:16.014 +03:00 [DBG] Connection id "0HN21D4C5F99M" started.
+2024-03-11 04:20:16.014 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - application/json 101
+2024-03-11 04:20:16.014 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:16.014 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:16.014 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:16.014 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:20:16.014 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:20:16.014 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:16.015 +03:00 [INF] Route matched with {action = "Put", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutAsync(System.Guid, CourseService.CourseService.Dtos.UpdateCourseDto) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:20:16.015 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:20:16.015 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:20:16.015 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:20:16.015 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:20:16.015 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:20:16.015 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:16.015 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:16.015 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:16.015 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:20:16.015 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:16.015 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:16.015 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:16.015 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:16.015 +03:00 [DBG] Attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' ...
+2024-03-11 04:20:16.016 +03:00 [DBG] Attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' using the name '' in request data ...
+2024-03-11 04:20:16.016 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-03-11 04:20:16.016 +03:00 [DBG] Connection id "0HN21D4C5F99M", Request id "0HN21D4C5F99M:00000001": started reading request body.
+2024-03-11 04:20:16.016 +03:00 [DBG] Connection id "0HN21D4C5F99M", Request id "0HN21D4C5F99M:00000001": done reading request body.
+2024-03-11 04:20:16.016 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'CourseService.CourseService.Dtos.UpdateCourseDto'
+2024-03-11 04:20:16.016 +03:00 [DBG] Done attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:16.016 +03:00 [DBG] Done attempting to bind parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:16.016 +03:00 [DBG] Attempting to validate the bound parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto' ...
+2024-03-11 04:20:16.016 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCourseDto' of type 'CourseService.CourseService.Dtos.UpdateCourseDto'.
+2024-03-11 04:20:16.194 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-03-11 04:20:16.194 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService) in 179.1137ms
+2024-03-11 04:20:16.194 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.PutAsync (CourseService)'
+2024-03-11 04:20:16.194 +03:00 [DBG] Connection id "0HN21D4C5F99M" completed keep alive response.
+2024-03-11 04:20:16.194 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 204 null null 180.1944ms
+2024-03-11 04:20:18.716 +03:00 [DBG] Connection id "0HN21D4C5F99M" received FIN.
+2024-03-11 04:20:18.716 +03:00 [DBG] Connection id "0HN21D4C5F99M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:20:18.716 +03:00 [DBG] Connection id "0HN21D4C5F99M" disconnecting.
+2024-03-11 04:20:18.717 +03:00 [DBG] Connection id "0HN21D4C5F99M" stopped.
+2024-03-11 04:20:28.646 +03:00 [DBG] Connection id "0HN21D4C5F99N" accepted.
+2024-03-11 04:20:28.647 +03:00 [DBG] Connection id "0HN21D4C5F99N" started.
+2024-03-11 04:20:28.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - null null
+2024-03-11 04:20:28.649 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:28.649 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:20:28.649 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:20:28.649 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:20:28.649 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:20:28.649 +03:00 [INF] Route matched with {action = "GetById", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] GetById(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:20:28.649 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:20:28.650 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:20:28.650 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:20:28.650 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:20:28.650 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:20:28.650 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:28.650 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:28.650 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:28.651 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:20:28.651 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:28.651 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:28.651 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:20:28.651 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:20:28.737 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:20:28.737 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:20:28.737 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:20:28.737 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:20:28.737 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:20:28.737 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:20:28.737 +03:00 [INF] Executing OkObjectResult, writing value of type 'CourseService.CourseService.Dtos.CourseDto'.
+2024-03-11 04:20:28.738 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetById (CourseService) in 87.7447ms
+2024-03-11 04:20:28.738 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:20:28.738 +03:00 [DBG] Connection id "0HN21D4C5F99N" completed keep alive response.
+2024-03-11 04:20:28.738 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 200 null application/json; charset=utf-8 89.569ms
+2024-03-11 04:20:33.719 +03:00 [DBG] Connection id "0HN21D4C5F99N" received FIN.
+2024-03-11 04:20:33.720 +03:00 [DBG] Connection id "0HN21D4C5F99N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:20:33.721 +03:00 [DBG] Connection id "0HN21D4C5F99N" disconnecting.
+2024-03-11 04:20:33.721 +03:00 [DBG] Connection id "0HN21D4C5F99N" stopped.
+2024-03-11 04:20:53.799 +03:00 [DBG] Connection id "0HN21D4C5F99O" accepted.
+2024-03-11 04:20:53.800 +03:00 [DBG] Connection id "0HN21D4C5F99O" started.
+2024-03-11 04:20:53.801 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video - multipart/form-data; boundary=----WebKitFormBoundaryjrOUpRkGYhCVxXaW 2740283
+2024-03-11 04:20:53.802 +03:00 [DBG] Connection id "0HN21D4C5F99O" paused.
+2024-03-11 04:20:53.803 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video'
+2024-03-11 04:20:53.803 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)' with route pattern 'api/Course/{courseId}/upload-video' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video'
+2024-03-11 04:20:53.803 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:20:53.803 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:20:53.803 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:20:53.803 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:20:53.809 +03:00 [INF] Route matched with {action = "UploadVideo", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadVideo(System.Guid, Microsoft.AspNetCore.Http.IFormFile) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:20:53.809 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:20:53.809 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-03-11 04:20:53.809 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:20:53.809 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:20:53.809 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:20:53.809 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:53.810 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:20:53.813 +03:00 [DBG] Connection id "0HN21D4C5F99O", Request id "0HN21D4C5F99O:00000001": started reading request body.
+2024-03-11 04:20:53.828 +03:00 [DBG] Connection id "0HN21D4C5F99O" resumed.
+2024-03-11 04:20:53.829 +03:00 [DBG] Connection id "0HN21D4C5F99O" paused.
+2024-03-11 04:20:53.832 +03:00 [DBG] Connection id "0HN21D4C5F99O" resumed.
+2024-03-11 04:20:53.832 +03:00 [DBG] Connection id "0HN21D4C5F99O", Request id "0HN21D4C5F99O:00000001": done reading request body.
+2024-03-11 04:20:53.839 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:20:53.839 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:20:53.839 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:20:53.839 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:20:53.839 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:20:53.839 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:20:53.839 +03:00 [DBG] Attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-03-11 04:20:53.840 +03:00 [DBG] Attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'videoFile' in request data ...
+2024-03-11 04:20:53.841 +03:00 [DBG] Done attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:20:53.841 +03:00 [DBG] Done attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:20:53.841 +03:00 [DBG] Attempting to validate the bound parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-03-11 04:20:53.842 +03:00 [DBG] Done attempting to validate the bound parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:20:58.799 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:20:58.800 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:20:58.800 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:20:58.800 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:20:58.800 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:20:58.800 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-11 04:20:58.802 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService) in 4992.6755ms
+2024-03-11 04:20:58.802 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:20:58.802 +03:00 [DBG] Connection id "0HN21D4C5F99O" completed keep alive response.
+2024-03-11 04:20:58.804 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video - 200 null application/json; charset=utf-8 5003.2842ms
+2024-03-11 04:21:03.725 +03:00 [DBG] Connection id "0HN21D4C5F99O" received FIN.
+2024-03-11 04:21:03.725 +03:00 [DBG] Connection id "0HN21D4C5F99O" disconnecting.
+2024-03-11 04:21:03.725 +03:00 [DBG] Connection id "0HN21D4C5F99O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:21:03.726 +03:00 [DBG] Connection id "0HN21D4C5F99O" stopped.
+2024-03-11 04:21:15.246 +03:00 [DBG] Connection id "0HN21D4C5F99P" accepted.
+2024-03-11 04:21:15.247 +03:00 [DBG] Connection id "0HN21D4C5F99P" started.
+2024-03-11 04:21:15.247 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video - multipart/form-data; boundary=----WebKitFormBoundaryK3U9ZdlW6BwnvZNV 5959360
+2024-03-11 04:21:15.248 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video'
+2024-03-11 04:21:15.248 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)' with route pattern 'api/Course/{courseId}/upload-video' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video'
+2024-03-11 04:21:15.248 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:21:15.249 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:21:15.249 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:21:15.249 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:21:15.249 +03:00 [INF] Route matched with {action = "UploadVideo", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadVideo(System.Guid, Microsoft.AspNetCore.Http.IFormFile) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:21:15.249 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:21:15.249 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-03-11 04:21:15.249 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:21:15.249 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:21:15.249 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:21:15.249 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.249 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:21:15.249 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:21:15.250 +03:00 [DBG] Connection id "0HN21D4C5F99P", Request id "0HN21D4C5F99P:00000001": started reading request body.
+2024-03-11 04:21:15.255 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.256 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.258 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.260 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.262 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.263 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.267 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.268 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.270 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.272 +03:00 [DBG] Connection id "0HN21D4C5F99P" paused.
+2024-03-11 04:21:15.273 +03:00 [DBG] Connection id "0HN21D4C5F99P" resumed.
+2024-03-11 04:21:15.274 +03:00 [DBG] Connection id "0HN21D4C5F99P", Request id "0HN21D4C5F99P:00000001": done reading request body.
+2024-03-11 04:21:15.277 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:21:15.277 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:21:15.277 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:21:15.277 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:21:15.277 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:21:15.277 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:21:15.277 +03:00 [DBG] Attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-03-11 04:21:15.277 +03:00 [DBG] Attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'videoFile' in request data ...
+2024-03-11 04:21:15.278 +03:00 [DBG] Done attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:21:15.278 +03:00 [DBG] Done attempting to bind parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:21:15.278 +03:00 [DBG] Attempting to validate the bound parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-03-11 04:21:15.278 +03:00 [DBG] Done attempting to validate the bound parameter 'videoFile' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-03-11 04:21:24.592 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:21:24.593 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:21:24.594 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:21:24.594 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:21:24.594 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:21:24.594 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-11 04:21:24.595 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService) in 9345.7122ms
+2024-03-11 04:21:24.595 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.UploadVideo (CourseService)'
+2024-03-11 04:21:24.595 +03:00 [DBG] Connection id "0HN21D4C5F99P" completed keep alive response.
+2024-03-11 04:21:24.599 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/upload-video - 200 null application/json; charset=utf-8 9352.2857ms
+2024-03-11 04:21:28.730 +03:00 [DBG] Connection id "0HN21D4C5F99P" received FIN.
+2024-03-11 04:21:28.732 +03:00 [DBG] Connection id "0HN21D4C5F99P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:21:28.732 +03:00 [DBG] Connection id "0HN21D4C5F99P" disconnecting.
+2024-03-11 04:21:28.732 +03:00 [DBG] Connection id "0HN21D4C5F99P" stopped.
+2024-03-11 04:21:36.100 +03:00 [DBG] Connection id "0HN21D4C5F99Q" accepted.
+2024-03-11 04:21:36.100 +03:00 [DBG] Connection id "0HN21D4C5F99Q" started.
+2024-03-11 04:21:36.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - null null
+2024-03-11 04:21:36.102 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:21:36.103 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:21:36.103 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:21:36.104 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:21:36.104 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:21:36.105 +03:00 [INF] Route matched with {action = "GetById", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] GetById(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:21:36.105 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:21:36.105 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:21:36.105 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:21:36.105 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:21:36.105 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:21:36.105 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:21:36.106 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:21:36.106 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:21:36.106 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:21:36.106 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:21:36.106 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:21:36.106 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:21:36.107 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:21:36.193 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:21:36.193 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:21:36.193 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:21:36.193 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:21:36.194 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:21:36.194 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:21:36.194 +03:00 [INF] Executing OkObjectResult, writing value of type 'CourseService.CourseService.Dtos.CourseDto'.
+2024-03-11 04:21:36.194 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetById (CourseService) in 88.8296ms
+2024-03-11 04:21:36.194 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:21:36.194 +03:00 [DBG] Connection id "0HN21D4C5F99Q" completed keep alive response.
+2024-03-11 04:21:36.194 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 200 null application/json; charset=utf-8 92.9439ms
+2024-03-11 04:21:38.731 +03:00 [DBG] Connection id "0HN21D4C5F99Q" received FIN.
+2024-03-11 04:21:38.732 +03:00 [DBG] Connection id "0HN21D4C5F99Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:21:38.732 +03:00 [DBG] Connection id "0HN21D4C5F99Q" disconnecting.
+2024-03-11 04:21:38.732 +03:00 [DBG] Connection id "0HN21D4C5F99Q" stopped.
+2024-03-11 04:22:05.365 +03:00 [DBG] Connection id "0HN21D4C5F99R" accepted.
+2024-03-11 04:22:05.366 +03:00 [DBG] Connection id "0HN21D4C5F99R" started.
+2024-03-11 04:22:05.366 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/delete-video/65ee5c8b3069258683eb54bb - null null
+2024-03-11 04:22:05.367 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/delete-video/65ee5c8b3069258683eb54bb'
+2024-03-11 04:22:05.367 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteVideo (CourseService)' with route pattern 'api/Course/{courseId}/delete-video/{videoId}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/delete-video/65ee5c8b3069258683eb54bb'
+2024-03-11 04:22:05.367 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteVideo (CourseService)'
+2024-03-11 04:22:05.367 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:05.367 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:22:05.367 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteVideo (CourseService)'
+2024-03-11 04:22:05.372 +03:00 [INF] Route matched with {action = "DeleteVideo", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideo(System.Guid, System.String) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:05.372 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:05.372 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:05.372 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:05.372 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:05.372 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:05.372 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:05.372 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:05.372 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:22:05.373 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:22:05.373 +03:00 [DBG] Attempting to bind parameter 'videoId' of type 'System.String' ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Attempting to bind parameter 'videoId' of type 'System.String' using the name 'videoId' in request data ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to bind parameter 'videoId' of type 'System.String'.
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to bind parameter 'videoId' of type 'System.String'.
+2024-03-11 04:22:05.373 +03:00 [DBG] Attempting to validate the bound parameter 'videoId' of type 'System.String' ...
+2024-03-11 04:22:05.373 +03:00 [DBG] Done attempting to validate the bound parameter 'videoId' of type 'System.String'.
+2024-03-11 04:22:05.774 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:05.775 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:22:05.775 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:22:05.775 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:22:05.775 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-03-11 04:22:05.775 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-11 04:22:05.775 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.DeleteVideo (CourseService) in 402.9979ms
+2024-03-11 04:22:05.775 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteVideo (CourseService)'
+2024-03-11 04:22:05.775 +03:00 [DBG] Connection id "0HN21D4C5F99R" completed keep alive response.
+2024-03-11 04:22:05.776 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/delete-video/65ee5c8b3069258683eb54bb - 200 null text/plain; charset=utf-8 409.2019ms
+2024-03-11 04:22:08.737 +03:00 [DBG] Connection id "0HN21D4C5F99R" received FIN.
+2024-03-11 04:22:08.737 +03:00 [DBG] Connection id "0HN21D4C5F99R" disconnecting.
+2024-03-11 04:22:08.738 +03:00 [DBG] Connection id "0HN21D4C5F99R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:08.739 +03:00 [DBG] Connection id "0HN21D4C5F99R" stopped.
+2024-03-11 04:22:14.396 +03:00 [DBG] Connection id "0HN21D4C5F99S" accepted.
+2024-03-11 04:22:14.397 +03:00 [DBG] Connection id "0HN21D4C5F99S" started.
+2024-03-11 04:22:14.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - null null
+2024-03-11 04:22:14.397 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:22:14.397 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec'
+2024-03-11 04:22:14.397 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:14.397 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:14.397 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:14.397 +03:00 [INF] Route matched with {action = "GetById", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] GetById(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:14.397 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:14.397 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:14.397 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:14.397 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:14.397 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:14.397 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:14.398 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:14.398 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:14.398 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:22:14.398 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:14.398 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:14.398 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:14.398 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:14.487 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:14.487 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:22:14.487 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:22:14.487 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:22:14.487 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:22:14.487 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:22:14.488 +03:00 [INF] Executing OkObjectResult, writing value of type 'CourseService.CourseService.Dtos.CourseDto'.
+2024-03-11 04:22:14.488 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetById (CourseService) in 90.4563ms
+2024-03-11 04:22:14.488 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:14.488 +03:00 [DBG] Connection id "0HN21D4C5F99S" completed keep alive response.
+2024-03-11 04:22:14.488 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec - 200 null application/json; charset=utf-8 91.3355ms
+2024-03-11 04:22:18.739 +03:00 [DBG] Connection id "0HN21D4C5F99S" received FIN.
+2024-03-11 04:22:18.741 +03:00 [DBG] Connection id "0HN21D4C5F99S" disconnecting.
+2024-03-11 04:22:18.741 +03:00 [DBG] Connection id "0HN21D4C5F99S" stopped.
+2024-03-11 04:22:18.742 +03:00 [DBG] Connection id "0HN21D4C5F99S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:22.080 +03:00 [DBG] Connection id "0HN21D4C5F99T" accepted.
+2024-03-11 04:22:22.080 +03:00 [DBG] Connection id "0HN21D4C5F99T" started.
+2024-03-11 04:22:22.080 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course - null null
+2024-03-11 04:22:22.080 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course'
+2024-03-11 04:22:22.080 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)' with route pattern 'api/Course' is valid for the request path '/api/Course'
+2024-03-11 04:22:22.080 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:22.080 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:22.080 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:22.080 +03:00 [INF] Route matched with {action = "Get", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CourseService.CourseService.Dtos.CourseDto]]] GetAsync() on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:22.081 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:22.081 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:22.081 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:22.081 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:22.081 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:22.081 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:22.081 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:22.167 +03:00 [INF] Getting all courses
+2024-03-11 04:22:22.167 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:22.167 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:22:22.168 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:22:22.168 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:22:22.168 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:22:22.168 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:22:22.168 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CourseService.CourseService.Dtos.CourseDto, CourseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 04:22:22.168 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService) in 87.6979ms
+2024-03-11 04:22:22.169 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:22.169 +03:00 [DBG] Connection id "0HN21D4C5F99T" completed keep alive response.
+2024-03-11 04:22:22.169 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course - 200 null application/json; charset=utf-8 88.7915ms
+2024-03-11 04:22:23.738 +03:00 [DBG] Connection id "0HN21D4C5F99T" received FIN.
+2024-03-11 04:22:23.738 +03:00 [DBG] Connection id "0HN21D4C5F99T" disconnecting.
+2024-03-11 04:22:23.739 +03:00 [DBG] Connection id "0HN21D4C5F99T" stopped.
+2024-03-11 04:22:23.739 +03:00 [DBG] Connection id "0HN21D4C5F99T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:40.823 +03:00 [DBG] Connection id "0HN21D4C5F99U" accepted.
+2024-03-11 04:22:40.824 +03:00 [DBG] Connection id "0HN21D4C5F99U" started.
+2024-03-11 04:22:40.824 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120 - null null
+2024-03-11 04:22:40.824 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120'
+2024-03-11 04:22:40.824 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteAsync (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120'
+2024-03-11 04:22:40.824 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteAsync (CourseService)'
+2024-03-11 04:22:40.824 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:40.824 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:22:40.824 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteAsync (CourseService)'
+2024-03-11 04:22:40.829 +03:00 [INF] Route matched with {action = "Delete", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteAsync(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:40.829 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:40.829 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:40.829 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:40.829 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:40.829 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:40.829 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:40.829 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:40.829 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:40.829 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:22:40.830 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:40.830 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:40.830 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:40.830 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:41.013 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:41.013 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:22:41.013 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:22:41.013 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:22:41.013 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-03-11 04:22:41.013 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-11 04:22:41.014 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.DeleteAsync (CourseService) in 184.7748ms
+2024-03-11 04:22:41.014 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.DeleteAsync (CourseService)'
+2024-03-11 04:22:41.014 +03:00 [DBG] Connection id "0HN21D4C5F99U" completed keep alive response.
+2024-03-11 04:22:41.014 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120 - 200 null text/plain; charset=utf-8 190.1683ms
+2024-03-11 04:22:43.742 +03:00 [DBG] Connection id "0HN21D4C5F99U" received FIN.
+2024-03-11 04:22:43.742 +03:00 [DBG] Connection id "0HN21D4C5F99U" disconnecting.
+2024-03-11 04:22:43.742 +03:00 [DBG] Connection id "0HN21D4C5F99U" stopped.
+2024-03-11 04:22:43.742 +03:00 [DBG] Connection id "0HN21D4C5F99U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:50.033 +03:00 [DBG] Connection id "0HN21D4C5F99V" accepted.
+2024-03-11 04:22:50.033 +03:00 [DBG] Connection id "0HN21D4C5F99V" started.
+2024-03-11 04:22:50.033 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120 - null null
+2024-03-11 04:22:50.033 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120'
+2024-03-11 04:22:50.034 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)' with route pattern 'api/Course/{id}' is valid for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120'
+2024-03-11 04:22:50.034 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:50.034 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:50.034 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:50.034 +03:00 [INF] Route matched with {action = "GetById", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CourseService.CourseService.Dtos.CourseDto]] GetById(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:50.034 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:50.034 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:50.034 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:50.034 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:50.034 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:50.034 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:50.034 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:50.034 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:50.034 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+2024-03-11 04:22:50.034 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:50.034 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:50.034 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+2024-03-11 04:22:50.034 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+2024-03-11 04:22:50.130 +03:00 [ERR] Get course error with idc913e21a-1d7c-45d4-963d-9eedeba7c120
+2024-03-11 04:22:50.131 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:50.132 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2024-03-11 04:22:50.132 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:22:50.133 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-03-11 04:22:50.133 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-03-11 04:22:50.133 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-03-11 04:22:50.150 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetById (CourseService) in 116.2915ms
+2024-03-11 04:22:50.151 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetById (CourseService)'
+2024-03-11 04:22:50.151 +03:00 [DBG] Connection id "0HN21D4C5F99V" completed keep alive response.
+2024-03-11 04:22:50.151 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120 - 404 null application/problem+json; charset=utf-8 117.2688ms
+2024-03-11 04:22:53.743 +03:00 [DBG] Connection id "0HN21D4C5F99V" received FIN.
+2024-03-11 04:22:53.744 +03:00 [DBG] Connection id "0HN21D4C5F99V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:53.744 +03:00 [DBG] Connection id "0HN21D4C5F99V" disconnecting.
+2024-03-11 04:22:53.744 +03:00 [DBG] Connection id "0HN21D4C5F99V" stopped.
+2024-03-11 04:22:56.539 +03:00 [DBG] Connection id "0HN21D4C5F9A0" accepted.
+2024-03-11 04:22:56.539 +03:00 [DBG] Connection id "0HN21D4C5F9A0" started.
+2024-03-11 04:22:56.539 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course - null null
+2024-03-11 04:22:56.539 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course'
+2024-03-11 04:22:56.539 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)' with route pattern 'api/Course' is valid for the request path '/api/Course'
+2024-03-11 04:22:56.539 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:56.539 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:22:56.539 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:56.540 +03:00 [INF] Route matched with {action = "Get", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CourseService.CourseService.Dtos.CourseDto]]] GetAsync() on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:22:56.540 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:22:56.540 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:22:56.540 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:22:56.540 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:22:56.540 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:22:56.540 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:56.540 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:22:56.623 +03:00 [INF] Getting all courses
+2024-03-11 04:22:56.624 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:22:56.624 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2024-03-11 04:22:56.624 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2024-03-11 04:22:56.624 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:22:56.624 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:22:56.624 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:22:56.624 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CourseService.CourseService.Dtos.CourseDto, CourseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 04:22:56.624 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService) in 84.2743ms
+2024-03-11 04:22:56.624 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.GetAsync (CourseService)'
+2024-03-11 04:22:56.624 +03:00 [DBG] Connection id "0HN21D4C5F9A0" completed keep alive response.
+2024-03-11 04:22:56.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course - 200 null application/json; charset=utf-8 85.1727ms
+2024-03-11 04:22:58.745 +03:00 [DBG] Connection id "0HN21D4C5F9A0" received FIN.
+2024-03-11 04:22:58.746 +03:00 [DBG] Connection id "0HN21D4C5F9A0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:22:58.746 +03:00 [DBG] Connection id "0HN21D4C5F9A0" disconnecting.
+2024-03-11 04:22:58.746 +03:00 [DBG] Connection id "0HN21D4C5F9A0" stopped.
+2024-03-11 04:23:17.724 +03:00 [DBG] Connection id "0HN21D4C5F9A1" accepted.
+2024-03-11 04:23:17.725 +03:00 [DBG] Connection id "0HN21D4C5F9A1" started.
+2024-03-11 04:23:17.725 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120/download - null null
+2024-03-11 04:23:17.725 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120/download'
+2024-03-11 04:23:17.725 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)' with route pattern 'api/Course/{courseId}/download' is valid for the request path '/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120/download'
+2024-03-11 04:23:17.725 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:17.726 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:23:17.726 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:17.731 +03:00 [INF] Route matched with {action = "DownloadCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DownloadCourse(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:23:17.732 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:23:17.732 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:23:17.732 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:23:17.732 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:23:17.732 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:23:17.732 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:23:17.732 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:23:17.732 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:23:17.732 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:23:17.732 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:17.732 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:17.732 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:23:17.732 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:17.816 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:23:17.816 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:23:17.816 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:23:17.816 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:23:17.816 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-03-11 04:23:17.816 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-03-11 04:23:17.816 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService) in 84.6234ms
+2024-03-11 04:23:17.816 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:17.816 +03:00 [DBG] Connection id "0HN21D4C5F9A1" completed keep alive response.
+2024-03-11 04:23:17.817 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/c913e21a-1d7c-45d4-963d-9eedeba7c120/download - 404 null text/plain; charset=utf-8 91.3136ms
+2024-03-11 04:23:18.748 +03:00 [DBG] Connection id "0HN21D4C5F9A1" received FIN.
+2024-03-11 04:23:18.748 +03:00 [DBG] Connection id "0HN21D4C5F9A1" disconnecting.
+2024-03-11 04:23:18.748 +03:00 [DBG] Connection id "0HN21D4C5F9A1" stopped.
+2024-03-11 04:23:18.749 +03:00 [DBG] Connection id "0HN21D4C5F9A1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:23:42.359 +03:00 [DBG] Connection id "0HN21D4C5F9A2" accepted.
+2024-03-11 04:23:42.360 +03:00 [DBG] Connection id "0HN21D4C5F9A2" started.
+2024-03-11 04:23:42.360 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/download - null null
+2024-03-11 04:23:42.360 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/download'
+2024-03-11 04:23:42.360 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)' with route pattern 'api/Course/{courseId}/download' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/download'
+2024-03-11 04:23:42.361 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:42.361 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:23:42.361 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:42.361 +03:00 [INF] Route matched with {action = "DownloadCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DownloadCourse(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:23:42.361 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:23:42.361 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:23:42.361 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:23:42.361 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:23:42.361 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:23:42.361 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:23:42.361 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:23:42.361 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:23:42.361 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:23:42.361 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:42.361 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:42.362 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:23:42.362 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:23:42.454 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:23:42.454 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:23:42.454 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:23:42.454 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:23:42.454 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-11 04:23:42.454 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-11 04:23:42.457 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService) in 95.9008ms
+2024-03-11 04:23:42.457 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.DownloadCourse (CourseService)'
+2024-03-11 04:23:42.457 +03:00 [DBG] Connection id "0HN21D4C5F9A2" completed keep alive response.
+2024-03-11 04:23:42.457 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/download - 200 null application/json; charset=utf-8 96.7803ms
+2024-03-11 04:23:43.757 +03:00 [DBG] Connection id "0HN21D4C5F9A2" received FIN.
+2024-03-11 04:23:43.757 +03:00 [DBG] Connection id "0HN21D4C5F9A2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:23:43.757 +03:00 [DBG] Connection id "0HN21D4C5F9A2" disconnecting.
+2024-03-11 04:23:43.757 +03:00 [DBG] Connection id "0HN21D4C5F9A2" stopped.
+2024-03-11 04:24:00.057 +03:00 [DBG] Connection id "0HN21D4C5F9A3" accepted.
+2024-03-11 04:24:00.058 +03:00 [DBG] Connection id "0HN21D4C5F9A3" started.
+2024-03-11 04:24:00.058 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/purchase - null 0
+2024-03-11 04:24:00.058 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/purchase'
+2024-03-11 04:24:00.058 +03:00 [DBG] Endpoint 'CourseService.CourseService.CourseController.CourseController.PurchaseCourse (CourseService)' with route pattern 'api/Course/{courseId}/purchase' is valid for the request path '/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/purchase'
+2024-03-11 04:24:00.058 +03:00 [DBG] Request matched endpoint 'CourseService.CourseService.CourseController.CourseController.PurchaseCourse (CourseService)'
+2024-03-11 04:24:00.059 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-03-11 04:24:00.059 +03:00 [INF] No CORS policy found for the specified request.
+2024-03-11 04:24:00.059 +03:00 [INF] Executing endpoint 'CourseService.CourseService.CourseController.CourseController.PurchaseCourse (CourseService)'
+2024-03-11 04:24:00.062 +03:00 [INF] Route matched with {action = "PurchaseCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PurchaseCourse(System.Guid) on controller CourseService.CourseService.CourseController.CourseController (CourseService).
+2024-03-11 04:24:00.063 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-03-11 04:24:00.063 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-03-11 04:24:00.063 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-03-11 04:24:00.063 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-03-11 04:24:00.063 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-03-11 04:24:00.063 +03:00 [DBG] Executing controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:24:00.063 +03:00 [DBG] Executed controller factory for controller CourseService.CourseService.CourseController.CourseController (CourseService)
+2024-03-11 04:24:00.063 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:24:00.063 +03:00 [DBG] Attempting to bind parameter 'courseId' of type 'System.Guid' using the name 'courseId' in request data ...
+2024-03-11 04:24:00.063 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:24:00.063 +03:00 [DBG] Done attempting to bind parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:24:00.063 +03:00 [DBG] Attempting to validate the bound parameter 'courseId' of type 'System.Guid' ...
+2024-03-11 04:24:00.063 +03:00 [DBG] Done attempting to validate the bound parameter 'courseId' of type 'System.Guid'.
+2024-03-11 04:24:00.163 +03:00 [INF] User  purchased course DENEME2
+2024-03-11 04:24:00.163 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-03-11 04:24:00.163 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-03-11 04:24:00.163 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-11 04:24:00.163 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-11 04:24:00.163 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-03-11 04:24:00.163 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-11 04:24:00.164 +03:00 [INF] Executed action CourseService.CourseService.CourseController.CourseController.PurchaseCourse (CourseService) in 100.9441ms
+2024-03-11 04:24:00.164 +03:00 [INF] Executed endpoint 'CourseService.CourseService.CourseController.CourseController.PurchaseCourse (CourseService)'
+2024-03-11 04:24:00.164 +03:00 [DBG] Connection id "0HN21D4C5F9A3" completed keep alive response.
+2024-03-11 04:24:00.164 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/api/Course/870570be-b2fb-4dfb-9996-56b5950b31ec/purchase - 200 null text/plain; charset=utf-8 105.6166ms
+2024-03-11 04:24:03.763 +03:00 [DBG] Connection id "0HN21D4C5F9A3" received FIN.
+2024-03-11 04:24:03.764 +03:00 [DBG] Connection id "0HN21D4C5F9A3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-11 04:24:03.764 +03:00 [DBG] Connection id "0HN21D4C5F9A3" disconnecting.
+2024-03-11 04:24:03.764 +03:00 [DBG] Connection id "0HN21D4C5F9A3" stopped.

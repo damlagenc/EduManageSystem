@@ -594,3 +594,169 @@ System.InvalidOperationException: The AuthorizationPolicy named: 'IsTeacher' was
 2024-03-10 02:38:04.242 +03:00 [DBG] Connection id "0HN20I7Q32OK7" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-03-10 02:38:04.243 +03:00 [DBG] Connection id "0HN20I7Q32OK7" disconnecting.
 2024-03-10 02:38:04.243 +03:00 [DBG] Connection id "0HN20I7Q32OK7" stopped.
+2024-03-10 03:09:50.238 +03:00 [INF] Application is shutting down...
+2024-03-10 03:09:50.241 +03:00 [DBG] Hosting stopping
+2024-03-10 03:09:50.254 +03:00 [DBG] Hosting stopped
+2024-03-10 15:44:51.409 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 15:44:51.445 +03:00 [DBG] Hosting starting
+2024-03-10 15:44:51.461 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 15:44:51.461 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 15:44:51.461 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 15:44:51.461 +03:00 [INF] Hosting environment: Development
+2024-03-10 15:44:51.461 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 15:44:51.461 +03:00 [DBG] Hosting started
+2024-03-10 16:15:10.953 +03:00 [DBG] Connection id "0HN210GEN6EJL" accepted.
+2024-03-10 16:15:10.954 +03:00 [DBG] Connection id "0HN210GEN6EJL" started.
+2024-03-10 16:15:10.967 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 16:15:10.968 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-10 16:15:10.977 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 16:15:10.977 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 16:15:11.014 +03:00 [DBG] Connection id "0HN210GEN6EJL" completed keep alive response.
+2024-03-10 16:15:11.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 48.8299ms
+2024-03-10 16:15:40.556 +03:00 [DBG] Connection id "0HN210GEN6EJL" received FIN.
+2024-03-10 16:15:40.559 +03:00 [DBG] Connection id "0HN210GEN6EJL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 16:15:40.560 +03:00 [DBG] Connection id "0HN210GEN6EJL" disconnecting.
+2024-03-10 16:15:40.561 +03:00 [DBG] Connection id "0HN210GEN6EJL" stopped.
+2024-03-10 16:22:22.352 +03:00 [DBG] Connection id "0HN210GEN6EJM" accepted.
+2024-03-10 16:22:22.354 +03:00 [DBG] Connection id "0HN210GEN6EJM" started.
+2024-03-10 16:22:22.357 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 16:22:22.357 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 16:22:22.357 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 16:22:22.361 +03:00 [DBG] Connection id "0HN210GEN6EJM" completed keep alive response.
+2024-03-10 16:22:22.362 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 5.6937ms
+2024-03-10 16:22:56.857 +03:00 [DBG] Connection id "0HN210GEN6EJM" received FIN.
+2024-03-10 16:22:56.858 +03:00 [DBG] Connection id "0HN210GEN6EJM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 16:22:56.858 +03:00 [DBG] Connection id "0HN210GEN6EJM" disconnecting.
+2024-03-10 16:22:56.858 +03:00 [DBG] Connection id "0HN210GEN6EJM" stopped.
+2024-03-10 16:23:09.738 +03:00 [DBG] Connection id "0HN210GEN6EJN" accepted.
+2024-03-10 16:23:09.738 +03:00 [DBG] Connection id "0HN210GEN6EJN" started.
+2024-03-10 16:23:09.739 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 16:23:09.739 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 16:23:09.739 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 16:23:09.742 +03:00 [DBG] Connection id "0HN210GEN6EJN" completed keep alive response.
+2024-03-10 16:23:09.742 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 3.2083ms
+2024-03-10 16:23:40.545 +03:00 [DBG] Connection id "0HN210GEN6EJN" received FIN.
+2024-03-10 16:23:40.546 +03:00 [DBG] Connection id "0HN210GEN6EJN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 16:23:40.546 +03:00 [DBG] Connection id "0HN210GEN6EJN" disconnecting.
+2024-03-10 16:23:40.546 +03:00 [DBG] Connection id "0HN210GEN6EJN" stopped.
+2024-03-10 18:04:48.877 +03:00 [INF] Application is shutting down...
+2024-03-10 18:04:48.879 +03:00 [DBG] Hosting stopping
+2024-03-10 18:04:48.890 +03:00 [DBG] Hosting stopped
+2024-03-10 18:08:56.951 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 18:08:56.986 +03:00 [DBG] Hosting starting
+2024-03-10 18:08:56.997 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 18:08:56.997 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 18:08:56.997 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 18:08:56.997 +03:00 [INF] Hosting environment: Development
+2024-03-10 18:08:56.997 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 18:08:56.997 +03:00 [DBG] Hosting started
+2024-03-10 18:13:27.187 +03:00 [INF] Application is shutting down...
+2024-03-10 18:13:27.188 +03:00 [DBG] Hosting stopping
+2024-03-10 18:13:27.201 +03:00 [DBG] Hosting stopped
+2024-03-10 18:17:58.398 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 18:17:58.431 +03:00 [DBG] Hosting starting
+2024-03-10 18:17:58.441 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 18:17:58.441 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 18:17:58.441 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 18:17:58.441 +03:00 [INF] Hosting environment: Development
+2024-03-10 18:17:58.441 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 18:17:58.441 +03:00 [DBG] Hosting started
+2024-03-10 18:26:39.101 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 18:26:39.133 +03:00 [DBG] Hosting starting
+2024-03-10 18:26:39.146 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 18:26:39.146 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 18:26:39.146 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 18:26:39.146 +03:00 [INF] Hosting environment: Development
+2024-03-10 18:26:39.146 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 18:26:39.146 +03:00 [DBG] Hosting started
+2024-03-10 18:47:58.405 +03:00 [INF] Application is shutting down...
+2024-03-10 18:47:58.406 +03:00 [DBG] Hosting stopping
+2024-03-10 18:47:58.421 +03:00 [DBG] Hosting stopped
+2024-03-10 18:48:47.561 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 18:48:47.596 +03:00 [DBG] Hosting starting
+2024-03-10 18:48:47.609 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 18:48:47.609 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 18:48:47.609 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 18:48:47.609 +03:00 [INF] Hosting environment: Development
+2024-03-10 18:48:47.609 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 18:48:47.609 +03:00 [DBG] Hosting started
+2024-03-10 19:02:44.482 +03:00 [INF] Application is shutting down...
+2024-03-10 19:02:44.483 +03:00 [DBG] Hosting stopping
+2024-03-10 19:02:44.501 +03:00 [DBG] Hosting stopped
+2024-03-10 19:11:16.855 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 19:11:16.891 +03:00 [DBG] Hosting starting
+2024-03-10 19:11:16.904 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 19:11:16.904 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 19:11:16.904 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 19:11:16.904 +03:00 [INF] Hosting environment: Development
+2024-03-10 19:11:16.904 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 19:11:16.905 +03:00 [DBG] Hosting started
+2024-03-10 19:11:26.372 +03:00 [DBG] Connection id "0HN213IUE863J" accepted.
+2024-03-10 19:11:26.374 +03:00 [DBG] Connection id "0HN213IUE863K" accepted.
+2024-03-10 19:11:26.374 +03:00 [DBG] Connection id "0HN213IUE863K" started.
+2024-03-10 19:11:26.374 +03:00 [DBG] Connection id "0HN213IUE863J" started.
+2024-03-10 19:11:26.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 19:11:26.404 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-10 19:11:26.414 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 19:11:26.414 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 19:11:26.451 +03:00 [DBG] Connection id "0HN213IUE863J" completed keep alive response.
+2024-03-10 19:11:26.452 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 52.4904ms
+2024-03-10 19:11:26.559 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - null null
+2024-03-10 19:11:26.559 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-03-10 19:11:26.559 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 19:11:26.597 +03:00 [DBG] Connection id "0HN213IUE863J" completed keep alive response.
+2024-03-10 19:11:26.597 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.2999ms
+2024-03-10 19:13:38.049 +03:00 [DBG] Connection id "0HN213IUE863K" disconnecting.
+2024-03-10 19:13:38.049 +03:00 [DBG] Connection id "0HN213IUE863J" disconnecting.
+2024-03-10 19:13:38.053 +03:00 [DBG] Connection id "0HN213IUE863J" stopped.
+2024-03-10 19:13:38.053 +03:00 [DBG] Connection id "0HN213IUE863K" stopped.
+2024-03-10 19:13:38.058 +03:00 [DBG] Connection id "0HN213IUE863J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 19:13:38.058 +03:00 [DBG] Connection id "0HN213IUE863K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 19:25:56.959 +03:00 [INF] Application is shutting down...
+2024-03-10 19:25:56.960 +03:00 [DBG] Hosting stopping
+2024-03-10 19:25:56.971 +03:00 [DBG] Hosting stopped
+2024-03-10 19:26:48.283 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-10 19:26:48.315 +03:00 [DBG] Hosting starting
+2024-03-10 19:26:48.332 +03:00 [INF] Now listening on: http://localhost:5008
+2024-03-10 19:26:48.332 +03:00 [DBG] Loaded hosting startup assembly CourseService
+2024-03-10 19:26:48.332 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-10 19:26:48.332 +03:00 [INF] Hosting environment: Development
+2024-03-10 19:26:48.332 +03:00 [INF] Content root path: /Users/damlagenc/Desktop/EduManageSystem/CourseService/CourseService
+2024-03-10 19:26:48.332 +03:00 [DBG] Hosting started
+2024-03-10 21:16:29.315 +03:00 [DBG] Connection id "0HN215OQFSFDF" accepted.
+2024-03-10 21:16:29.316 +03:00 [DBG] Connection id "0HN215OQFSFDF" started.
+2024-03-10 21:16:29.329 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 21:16:29.331 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-10 21:16:29.340 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 21:16:29.340 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 21:16:29.375 +03:00 [DBG] Connection id "0HN215OQFSFDF" completed keep alive response.
+2024-03-10 21:16:29.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 48.133ms
+2024-03-10 21:17:39.861 +03:00 [DBG] Connection id "0HN215OQFSFDF" received FIN.
+2024-03-10 21:17:39.867 +03:00 [DBG] Connection id "0HN215OQFSFDF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 21:17:39.868 +03:00 [DBG] Connection id "0HN215OQFSFDF" disconnecting.
+2024-03-10 21:17:39.870 +03:00 [DBG] Connection id "0HN215OQFSFDF" stopped.
+2024-03-10 21:22:01.794 +03:00 [DBG] Connection id "0HN215OQFSFDG" accepted.
+2024-03-10 21:22:01.795 +03:00 [DBG] Connection id "0HN215OQFSFDG" started.
+2024-03-10 21:22:01.796 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 21:22:01.797 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 21:22:01.797 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 21:22:01.801 +03:00 [DBG] Connection id "0HN215OQFSFDG" completed keep alive response.
+2024-03-10 21:22:01.801 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 5.505ms
+2024-03-10 21:23:09.342 +03:00 [DBG] Connection id "0HN215OQFSFDG" received FIN.
+2024-03-10 21:23:09.346 +03:00 [DBG] Connection id "0HN215OQFSFDG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 21:23:09.347 +03:00 [DBG] Connection id "0HN215OQFSFDG" disconnecting.
+2024-03-10 21:23:09.347 +03:00 [DBG] Connection id "0HN215OQFSFDG" stopped.
+2024-03-10 21:47:58.460 +03:00 [DBG] Connection id "0HN215OQFSFDH" accepted.
+2024-03-10 21:47:58.462 +03:00 [DBG] Connection id "0HN215OQFSFDH" started.
+2024-03-10 21:47:58.463 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - null null
+2024-03-10 21:47:58.464 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-03-10 21:47:58.464 +03:00 [DBG] Request did not match any endpoints
+2024-03-10 21:47:58.468 +03:00 [DBG] Connection id "0HN215OQFSFDH" completed keep alive response.
+2024-03-10 21:47:58.468 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - 200 null text/html;charset=utf-8 4.8655ms
+2024-03-10 21:49:09.657 +03:00 [DBG] Connection id "0HN215OQFSFDH" received FIN.
+2024-03-10 21:49:09.659 +03:00 [DBG] Connection id "0HN215OQFSFDH" disconnecting.
+2024-03-10 21:49:09.659 +03:00 [DBG] Connection id "0HN215OQFSFDH" stopped.
+2024-03-10 21:49:09.662 +03:00 [DBG] Connection id "0HN215OQFSFDH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-10 21:53:57.846 +03:00 [INF] Application is shutting down...
+2024-03-10 21:53:57.848 +03:00 [DBG] Hosting stopping
+2024-03-10 21:53:57.858 +03:00 [DBG] Hosting stopped
