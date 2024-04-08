@@ -22,8 +22,8 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGODB_CONNECTION_STRING=mongodb://mongo:27017/auth-service
-      - SESSION_SECRET=G/+98Uzxc68^%it9o0-4@F7h*&U9i_o+
+      - MONGODB_CONNECTION_STRING=
+      - SESSION_SECRET=
       - JWT_SECRET_KEY=nWGCbKgcbEgZHkbj9atm
 
   course-service:
@@ -56,5 +56,5 @@ services:
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: damlagnc14
-      MONGO_INITDB_ROOT_PASSWORD: exLfo0xt5nyio5GIAoample
+      MONGO_INITDB_ROOT_USERNAME: 
+      MONGO_INITDB_ROOT_PASSWORD: 
